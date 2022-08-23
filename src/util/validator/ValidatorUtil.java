@@ -6,7 +6,7 @@ import java.util.Scanner;
 import constant.Constant.CommandOptionType;
 import constant.Constant.FilePathType;
 /**
- * <p>入力チェック処理の共通クラス.
+ * <p>入力チェック処理の共通クラス
  * 
  * @since 1.0
  * @version 1.0

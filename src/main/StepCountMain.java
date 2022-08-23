@@ -16,6 +16,7 @@ import factory.StepCountFactory.StepCountType;
 import logic.commentPatternMatch.IfCommentPatternMatch;
 import logic.stepCount.IfStepCount;
 import main.arg.Arguments;
+import util.log.Log4J2;
 import util.validator.ValidatorUtil;
 
 /**
@@ -42,6 +43,8 @@ import util.validator.ValidatorUtil;
  * @author takashi.ebina
  */
 public class StepCountMain {
+	
+	private static Log4J2 logger = Log4J2.getInstance();
 
 	/**
 	 * <p>ステップカウント処理を行うエントリーポイントメソッド
@@ -80,7 +83,7 @@ public class StepCountMain {
 		final Scanner sn = new Scanner(System.in);
 		final String inputDirectoryPath = sn.next();
 		if (!ValidatorUtil.inputDirectoryCheck(inputDirectoryPath)) {
-			System.out.println("--> [INFO]:ステップカウント処理を終了します。");
+			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
 		
@@ -90,7 +93,7 @@ public class StepCountMain {
 		System.out.println("--> ------------------------------------------------");
 		final String outputFilePath = sn.next();
 		if (!ValidatorUtil.outputFileCheck(outputFilePath, CommandOptionType.INTERACTIVE)) {
-			System.out.println("--> [INFO]:ステップカウント処理を終了します。");
+			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
@@ -113,11 +116,11 @@ public class StepCountMain {
     	final String outputFilePath = args.getScriptArguments().getOutputFilePath();
  
 		if (!ValidatorUtil.inputDirectoryCheck(inputDirectoryPath)) {
-			System.out.println("--> [INFO]:ステップカウント処理を終了します。");
+			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
 		if (!ValidatorUtil.outputFileCheck(outputFilePath, CommandOptionType.SCRIPT)) {
-			System.out.println("--> [INFO]:ステップカウント処理を終了します。");
+			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
@@ -132,12 +135,19 @@ public class StepCountMain {
 	 */
 	private static void execStepCount(final File inputDirectory, final File outputFile) {
 		try {
-			System.out.println("--> [INFO]:ステップカウント処理を開始します。");
+			System.out.println("--> ステップカウント処理を開始します。");
+			logger.logInfo("ステップカウント処理開始");
+			
 			writeHeaderStepCount(outputFile);
 			writeStepCountInDirectory(inputDirectory, outputFile);
-			System.out.println("--> [INFO]:ステップカウント処理を終了します。");
+			
+			System.out.println("--> ステップカウント処理を終了します。");
+			logger.logInfo("ステップカウント処理正常終了");
 		} catch (Exception e) {
-			System.err.println("--> [ERROR]:ステップカウント処理で異常が発生しました。処理を終了します。");
+			logger.logWarn("ステップカウント処理異常終了");
+			logger.logError(e);
+			
+			System.err.println("--> ステップカウント処理で異常が発生しました。処理を終了します。");
 			return;
 		}	
 	}
@@ -155,7 +165,7 @@ public class StepCountMain {
 			Constant.STEP_COUNT_HEADER_NAME.stream().forEach(r -> sj.add(r));
 			bw.write(sj.toString());
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.logError(e);
 		}
 	}
 	/**
@@ -187,9 +197,10 @@ public class StepCountMain {
                 if (CommentPatternMatchType.containsExtension(extension) && StepCountType.containsExtension(extension)) {
 					IfCommentPatternMatch commentPatternMatchObj = CommentPatternMatchFactory.create(extension);
 					IfStepCount stepCountObj = StepCountFactory.create(extension, inputFile, outputFile, commentPatternMatchObj);
+					logger.logInfo("ファイル名：" + fileName + "ステップカウント処理開始");
 					stepCountObj.stepCount();
                 } else {
-                	System.out.println("--> [INFO]:ファイルの拡張子が対応していません。ステップカウント処理をスキップします。 ファイル名：" + fileName);
+                	logger.logWarn("--> ファイルの拡張子が対応していません。ステップカウント処理をスキップします。 ファイル名：" + fileName);
                 }
             }
         }
