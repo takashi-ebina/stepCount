@@ -1,5 +1,6 @@
 package logic.commentPatternMatch;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 import factory.CommentPatternMatchFactory;
@@ -55,5 +56,15 @@ public class CsCommentPatternMatch extends AbsCommentPatternMatch {
 	    Pattern endMultiCCommentPattern = Pattern.compile(EndMultiCommentPattern.Cs.getValue());
 	    return  endMultiCCommentPattern.matcher(target).find();
 	}
-
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (!(obj instanceof CsCommentPatternMatch)) return false;
+		return true;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash();
+	}
 }

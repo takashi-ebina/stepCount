@@ -9,6 +9,7 @@ import data.StepCountData;
 import factory.StepCountFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch;
 import logic.commentPatternMatch.IfCommentPatternMatch;
+import util.log.Log4J2;
 /**
  * <p>ステップカウントの抽象クラス
  * <p>各プログラムファイルのステップカウント処理を提供する抽象クラスです。<br>
@@ -27,6 +28,8 @@ import logic.commentPatternMatch.IfCommentPatternMatch;
  * @see AbsCommentPatternMatch
  */
 public abstract class AbsStepCount implements IfStepCount {
+	/** Log4J2インスタンス */
+	protected final Log4J2 logger = Log4J2.getInstance();
 	/** カウント対象プログラムファイル */
 	protected final File inputFile;
 	/** カウント結果出力対象ファイル */
@@ -87,7 +90,7 @@ public abstract class AbsStepCount implements IfStepCount {
 		return commentPatternMatch.isEndMultiCommentPattern(target);
 	}
 	/**
-	 * <p>プログラムファイルのステップ数を集計するメソッド
+	 * <p>プログラムファイルのステップ数をステップカウント結果出力ファイルに書き込むメソッド
 	 * <p>引数の1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラスを元に、<br>
 	 * 集計結果をカウント結果出力対象ファイル（{@link outputFile}）に書き込む処理を行います。
 	 * <p>[書き込み内容]<br>
@@ -99,7 +102,9 @@ public abstract class AbsStepCount implements IfStepCount {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(this.outputFile))) {
 			bw.write(this.inputFile.getName() + stepCountData.outputDataCommaDelimited());
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.logWarn("ステップ数書き込み処理で例外発生。 カウント対象プログラムファイル：" 
+					+ this.inputFile + ", カウント結果出力対象ファイル：" + this.outputFile);
+			logger.logError(e);
 		}
 	}
 

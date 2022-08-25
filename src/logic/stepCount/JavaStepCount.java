@@ -44,29 +44,34 @@ public class JavaStepCount extends AbsStepCount {
 	 */
 	@Override
 	protected StepCountData fileReadStepCount(final StepCountData stepCountData) {
-		try (BufferedReader bw = new BufferedReader(new FileReader(this.outputFile))) {
+		try (BufferedReader bw = new BufferedReader(new FileReader(this.inputFile))) {
 			String readLine = "";
 			boolean isCommentLine = false;
 			while ((readLine = bw.readLine()) != null) {
 				final String trimReadLine = readLine.trim();
 				stepCountData.incrementTotalStepCount();
+				// コメント行判定
 				if (isCommentLine) {
 					stepCountData.incrementCommentStepCount();
 					if (super.isEndMultiCommentPattern(trimReadLine)) isCommentLine = false;
 					continue;
 				}
+				// 空行判定
 				if (trimReadLine == null || "".equals(trimReadLine)) {
 					stepCountData.incrementEmptyStepCount();
 					continue;
 				}
+				// １行コメント判定
 				if (super.isSingleCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					continue;
 				}
+				// 複数行コメント（開始）／複数行コメント（終了）判定
 				if (super.isStartMultiCommentPattern(trimReadLine) && super.isEndMultiCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					continue;
 				}
+				// 複数行コメント（開始）／複数行コメント（終了）判定
 				if (super.isStartMultiCommentPattern(trimReadLine) && !super.isEndMultiCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					isCommentLine = true;
@@ -75,7 +80,8 @@ public class JavaStepCount extends AbsStepCount {
 				stepCountData.incrementExecStepCount();
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.logWarn("Javaステップ数集計処理で例外発生。 ファイル名：" + this.inputFile);
+			logger.logError(e);
 		}
 		return stepCountData;
 	}

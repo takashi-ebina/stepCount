@@ -44,8 +44,8 @@ import util.validator.ValidatorUtil;
  */
 public class StepCountMain {
 	
-	private static Log4J2 logger = Log4J2.getInstance();
-
+	/** Log4J2インスタンス */
+	private static final Log4J2 logger = Log4J2.getInstance();
 	/**
 	 * <p>ステップカウント処理を行うエントリーポイントメソッド
 	 * 
@@ -135,8 +135,8 @@ public class StepCountMain {
 	 */
 	private static void execStepCount(final File inputDirectory, final File outputFile) {
 		try {
-			System.out.println("--> ステップカウント処理を開始します。");
 			logger.logInfo("ステップカウント処理開始");
+			System.out.println("--> ステップカウント処理を開始します。");
 			
 			writeHeaderStepCount(outputFile);
 			writeStepCountInDirectory(inputDirectory, outputFile);
@@ -154,10 +154,10 @@ public class StepCountMain {
 	/**
 	 * <p>CSVヘッダー書き込みメソッド
 	 * <p>引数のカウント結果出力対象ファイルに対して、CSVのヘッダーの書き込み処理を行う。
-	 * <p>CSVヘッダーの定義は{@link Constant#STEP_COUNT_HEADER_NAME}参照。
+	 * <p>CSVヘッダーの定義は{@link TestConstant#STEP_COUNT_HEADER_NAME}参照。
 	 * 
 	 * @param outputFile カウント結果出力対象ファイル
-	 * @see Constant#STEP_COUNT_HEADER_NAME
+	 * @see TestConstant#STEP_COUNT_HEADER_NAME
 	 */
 	private static void writeHeaderStepCount(final File outputFile) {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {

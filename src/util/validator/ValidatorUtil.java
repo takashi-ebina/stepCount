@@ -55,15 +55,15 @@ public class ValidatorUtil {
 	public static boolean outputFileCheck(final String outputPath, final CommandOptionType mode) {
 		
 		if ("".equals(outputPath)) {
-			System.out.println("--> [ERROR]:出力フォルダが指定されていません。");
+			System.out.println("--> 出力フォルダが指定されていません。");
 			return false;
 		}
 		if (fileCheck(outputPath, FilePathType.DIRECTORY)) {
-			System.out.println("--> [ERROR]:出力指定がフォルダになっています。 ファイルを指定してください");
+			System.out.println("--> 出力指定がフォルダになっています。 ファイルを指定してください");
 			return false;
 		}
 		if (!isExtensionForCsv(new File(outputPath))) {
-			System.out.println("--> [ERROR]:拡張子がCSV形式ではありません。");
+			System.out.println("--> 拡張子がCSV形式ではありません。");
 			return false;
 		}
 		if (mode == CommandOptionType.INTERACTIVE && new File(outputPath).exists()) {

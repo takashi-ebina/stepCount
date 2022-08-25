@@ -63,9 +63,10 @@ public class StepCountFactory {
 	     * <p>拡張子に対応するクラス名（完全修飾子）の値を返却するメソッド
 	     * <p>拡張子から該当のEnumを取得する処理は{@link EnumReverseLookup#lookup(Object)}に移譲しています。
 	     * @param extension 拡張子
+	     * @throws IllegalArgumentException 拡張子に対応するクラスが存在しない場合
 	     * @return 拡張子に対応するクラス名（完全修飾子）
 	     */
-		public static String getByClassName(final String extension) {
+		public static String getByClassName(final String extension) throws IllegalArgumentException {
 			return new EnumReverseLookup<>(StepCountType.class, StepCountType::getExtension).lookup(extension).getClassName();
 		}
 	    /**
@@ -100,4 +101,14 @@ public class StepCountFactory {
 		}
 		return stepCountObj;
 	}
+//	Enumやリフレクションをわざわざ使わなくても、以下の実装で問題ないはず
+//	public static IfStepCount create (final String extension, final File inputFile, final File outputFile, IfCommentPatternMatch commentPatternMatch)　{
+//		IfStepCount stepCountObj = null;
+//		if ("java".equals(extension)) {
+//			stepCountObj = new JavaStepCount(inputFile, outputFile, commentPatternMatch);
+//		} else if ("cs".equals(extension)) {
+//			stepCountObj = new CsStepCount(inputFile, outputFile, commentPatternMatch);
+//		}
+//		return stepCountObj;
+//	}
 }

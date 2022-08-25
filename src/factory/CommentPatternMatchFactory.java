@@ -60,9 +60,10 @@ public class CommentPatternMatchFactory {
 	     * <p>拡張子に対応するクラス名（完全修飾子）の値を返却するメソッド
 	     * <p>拡張子から該当のEnumを取得する処理は{@link EnumReverseLookup#lookup(Object)}に移譲しています。
 	     * @param extension 拡張子
+	     * @throws IllegalArgumentException 拡張子に対応するクラスが存在しない場合
 	     * @return 拡張子に対応するクラス名（完全修飾子）
 	     */
-		public static String getByClassName(final String extension) {
+		public static String getByClassName(final String extension) throws IllegalArgumentException {
 			return new EnumReverseLookup<>(CommentPatternMatchType.class, CommentPatternMatchType::getExtension).lookup(extension).getClassName();
 		}
 	    /**
@@ -93,4 +94,14 @@ public class CommentPatternMatchFactory {
 		}
 		return commentPatternMatchObj;
 	}
+//	Enumやリフレクションをわざわざ使わなくても、以下の実装で問題ないはず
+//	public static IfCommentPatternMatch create (final String extension) {
+//	IfCommentPatternMatch commentPatternMatchObj = null;
+//	if ("java".equals(extension)) {
+//		commentPatternMatchObj = new JavaCommentPatternMatch();
+//	} else if ("cs".equals(extension)) {
+//		commentPatternMatchObj = new CsCommentPatternMatch();
+//	}
+//	return commentPatternMatchObj;
+//}
 }

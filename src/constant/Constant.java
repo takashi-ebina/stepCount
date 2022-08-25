@@ -2,6 +2,7 @@ package constant;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 /**
  * <p>共通の定数クラス
  * 
@@ -18,7 +19,7 @@ public class Constant {
 	/** 
 	 * <p>ステップカウントCSVのヘッダー名
 	 */
-	public static final ArrayList<String> STEP_COUNT_HEADER_NAME =
+	public static final List<String> STEP_COUNT_HEADER_NAME =
 			new ArrayList<String>(Arrays.asList("ファイルパス","総行数","実行行数","コメント行数","空行数"));
 	/** 
 	 * <p>ファイルパス区分
