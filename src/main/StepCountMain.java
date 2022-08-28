@@ -154,10 +154,10 @@ public class StepCountMain {
 	/**
 	 * <p>CSVヘッダー書き込みメソッド
 	 * <p>引数のカウント結果出力対象ファイルに対して、CSVのヘッダーの書き込み処理を行う。
-	 * <p>CSVヘッダーの定義は{@link TestConstant#STEP_COUNT_HEADER_NAME}参照。
+	 * <p>CSVヘッダーの定義は{@link Constant#STEP_COUNT_HEADER_NAME}参照。
 	 * 
 	 * @param outputFile カウント結果出力対象ファイル
-	 * @see TestConstant#STEP_COUNT_HEADER_NAME
+	 * @see Constant#STEP_COUNT_HEADER_NAME
 	 */
 	private static void writeHeaderStepCount(final File outputFile) {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {

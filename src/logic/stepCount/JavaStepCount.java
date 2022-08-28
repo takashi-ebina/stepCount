@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Objects;
 
 import data.StepCountData;
 import factory.StepCountFactory;
@@ -80,9 +81,26 @@ public class JavaStepCount extends AbsStepCount {
 				stepCountData.incrementExecStepCount();
 			}
 		} catch (IOException e) {
-			logger.logWarn("Javaステップ数集計処理で例外発生。 ファイル名：" + this.inputFile);
+			logger.logWarn("Javaステップ数集計処理で例外発生。 ファイル名：" + this.inputFile.getName());
 			logger.logError(e);
 		}
 		return stepCountData;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (!(obj instanceof JavaStepCount)) return false;
+		
+		JavaStepCount test = (JavaStepCount)obj;
+		if (!(Objects.equals(this.inputFile, test.inputFile))) return false;
+		if (!(Objects.equals(this.outputFile, test.outputFile))) return false;
+		if (!(Objects.equals(this.commentPatternMatch, test.commentPatternMatch))) return false;
+		return true;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash();
 	}
 }

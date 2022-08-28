@@ -14,14 +14,10 @@ import logic.commentPatternMatch.CsCommentPatternMatch;
 import logic.commentPatternMatch.IfCommentPatternMatch;
 import logic.commentPatternMatch.JavaCommentPatternMatch;
 
-/**
- * @author takashi.ebina
- *
- */
 class TestCommentPatternMatchFactory {
     @BeforeEach
     void setUp() {
-    	//avaCommentPatternMatch m = mock(JavaCommentPatternMatch.class);
+    	
     }
     @Nested
     class Create {
@@ -52,7 +48,7 @@ class TestCommentPatternMatchFactory {
        	@Nested
         @DisplayName("異常系")
     	class UnhappyCases {
-            @DisplayName("Enum(CommentPatternMatchType)に定義されていない拡張子を引数に指定")
+            @DisplayName("Enum(CommentPatternMatchType)に定義されていない拡張子を引数に指定し、IllegalArgumentExceptionが発生")
         	@Test
         	void Exception1() throws Exception {
         		// 【事前準備】
@@ -63,5 +59,4 @@ class TestCommentPatternMatchFactory {
         	}
     	}
     }
-
 }
