@@ -29,7 +29,7 @@ import util.log.Log4J2;
  */
 public abstract class AbsStepCount implements IfStepCount {
 	/** Log4J2インスタンス */
-	protected final Log4J2 logger = Log4J2.getInstance();
+	protected final Log4J2 logger;
 	/** カウント対象プログラムファイル */
 	protected final File inputFile;
 	/** カウント結果出力対象ファイル */
@@ -47,6 +47,7 @@ public abstract class AbsStepCount implements IfStepCount {
 		this.inputFile = inputFile;
 		this.outputFile = outputFile;
 		this.commentPatternMatch = commentPatternMatch;
+		this.logger = Log4J2.getInstance();
 	}
 	/**
 	 * <p>プログラムファイルのステップ数を集計するメソッド

@@ -1,0 +1,7 @@
+2022/08/30 08:12:15.167 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/08/30 08:14:31.224 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/08/30 08:14:31.240 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Mario.javaステップカウント処理開始
+2022/08/30 08:14:31.243 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Luigi.javaステップカウント処理開始
+2022/08/30 08:14:31.245 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Character.javaステップカウント処理開始
+2022/08/30 08:14:31.247 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：HammerBros.javaステップカウント処理開始
+2022/08/30 08:14:31.249 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CharacterIf.javaステップカウント処理開始

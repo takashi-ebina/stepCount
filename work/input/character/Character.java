@@ -1,8 +1,6 @@
 package sample1.character;
 
-/*
- * 【抽象クラス】implements CharacterIf
- */
+/*【抽象クラス】implements CharacterIf */
 public abstract class Character  {
 
 	/*
