@@ -92,24 +92,32 @@ public class Log4J2 {
 
 	/**
 	 * <p>Log4J2でエラーレベル情報ををロギングする
+	 * @param logMsg ログメッセージ
 	 * @param e 例外情報
 	 */
-	public void logError(final Exception e) {
+	public void logError(String logMsg, final Exception e) {
 		final String msg = e.getMessage();
 		final Class<? extends Object> clss = e.getClass();		// Exceptionのクラス
 		final String clsname = e.getClass().getName();			// Exceptionのクラス名
 		final StackTraceElement[] st = e.getStackTrace();
-		String logMsg = "";
+		logMsg += "¥n";
 		if (st != null && st.length > 0) {
 			logMsg += "Class:" + clsname+ "¥n";
 			logMsg += "Detail:" + msg + "¥n";
 			for (int i=0; i<st.length ; i++) {
-				String err   = st[i].toString();
+				String err = st[i].toString();
 				logMsg += err + "¥n";
 			}
 			Logger logger = LogManager.getLogger(clss);
 			logger.error("{}", logMsg);
 		}
+	}
+	/**
+	 * <p>Log4J2でエラーレベル情報ををロギングする
+	 * @param e 例外情報
+	 */
+	public void logError(final Exception e) {
+		logError("", e);
 	}
 }
 		

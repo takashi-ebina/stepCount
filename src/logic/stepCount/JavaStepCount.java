@@ -2,10 +2,12 @@ package logic.stepCount;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Objects;
 
+import constant.Constant;
 import data.StepCountData;
 import factory.StepCountFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch;
@@ -45,34 +47,34 @@ public class JavaStepCount extends AbsStepCount {
 	 */
 	@Override
 	protected StepCountData fileReadStepCount(final StepCountData stepCountData) {
-		try (BufferedReader bw = new BufferedReader(new FileReader(this.inputFile))) {
+		try (BufferedReader bw = new BufferedReader(new InputStreamReader(new FileInputStream(this.inputFile), Constant.CHARSET_NAME))) {
 			String readLine = "";
 			boolean isCommentLine = false;
 			while ((readLine = bw.readLine()) != null) {
 				final String trimReadLine = readLine.trim();
 				stepCountData.incrementTotalStepCount();
-				// コメント行判定
+				// コメント行状態判定
 				if (isCommentLine) {
 					stepCountData.incrementCommentStepCount();
 					if (super.isEndMultiCommentPattern(trimReadLine)) isCommentLine = false;
 					continue;
 				}
-				// 空行判定
-				if (trimReadLine == null || "".equals(trimReadLine)) {
+				// 空行存在判定
+				if ("".equals(trimReadLine)) {
 					stepCountData.incrementEmptyStepCount();
 					continue;
 				}
-				// １行コメント判定
+				// １行コメント存在判定
 				if (super.isSingleCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					continue;
 				}
-				// 複数行コメント（開始）／複数行コメント（終了）判定
+				// 複数行コメント（１行で完結する複数行コメント）存在判定
 				if (super.isStartMultiCommentPattern(trimReadLine) && super.isEndMultiCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					continue;
 				}
-				// 複数行コメント（開始）／複数行コメント（終了）判定
+				// 複数行コメント（複数行にまたがる複数行コメント）存在判定
 				if (super.isStartMultiCommentPattern(trimReadLine) && !super.isEndMultiCommentPattern(trimReadLine)) {
 					stepCountData.incrementCommentStepCount();
 					isCommentLine = true;
@@ -81,12 +83,18 @@ public class JavaStepCount extends AbsStepCount {
 				stepCountData.incrementExecStepCount();
 			}
 		} catch (IOException e) {
-			logger.logWarn("Javaステップ数集計処理で例外発生。 ファイル名：" + this.inputFile.getName());
-			logger.logError(e);
+			logger.logError("Javaステップ数集計処理で例外発生。 ファイル名：" + this.inputFile.getName(), e);
+			// ステップカウント処理で例外が発生した場合は、該当ファイルのステップ数の出力を行わない。
+			stepCountData.setCanWriteStepCount(false);
 		}
 		return stepCountData;
 	}
-	
+	/**
+	 * <p>このオブジェクトが引数の他のオブジェクトが等しいかどうかを判定するメソッド
+	 *
+	 * @param obj 比較対象のオブジェクト
+	 * @return このオブジェクトが引数と同じである場合はtrue。それ以外の場合はfalseを返却する。
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) return true;
@@ -98,7 +106,11 @@ public class JavaStepCount extends AbsStepCount {
 		if (!(Objects.equals(this.commentPatternMatch, test.commentPatternMatch))) return false;
 		return true;
 	}
-	
+	/**
+	 * <p>オブジェクトのハッシュ・コード値を返却するメソッド
+	 * 
+	 * @return このオブジェクトのハッシュ・コード値。
+	 */
 	@Override
 	public int hashCode() {
 		return Objects.hash();

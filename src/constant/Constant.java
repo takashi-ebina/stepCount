@@ -1,5 +1,6 @@
 package constant;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +22,14 @@ public class Constant {
 	 */
 	public static final List<String> STEP_COUNT_HEADER_NAME =
 			new ArrayList<String>(Arrays.asList("ファイルパス","総行数","実行行数","コメント行数","空行数"));
+	/** 
+	 * <p>改行コード(UNIXでは"\n")
+	 */
+	public static final String LINE_SEPARATOR = System.getProperty("line.separator");
+	/**
+	 * 文字コード（Java仮想マシンのデフォルトの文字セット）
+	 */
+	public static final String CHARSET_NAME = Charset.defaultCharset().name();
 	/** 
 	 * <p>ファイルパス区分
 	 */	

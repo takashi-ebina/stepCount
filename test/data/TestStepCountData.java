@@ -85,7 +85,7 @@ class TestStepCountData {
     		// 【事前準備】
     		// 【実行】		
     		// 【検証】
-    		assertEquals("stepCountData [totalStepCount=0, execStepCount=0, commentStepCount=0, emptyStepCount=0]", stepCountData.toString());
+    		assertEquals("stepCountData [totalStepCount=0, execStepCount=0, commentStepCount=0, emptyStepCount=0, canWriteStepCount=true]", stepCountData.toString());
     		// 【後処理】
     	}
     	@DisplayName("StepCountDataで定義されている文字列表現のテスト（インクリメント実施後）")
@@ -98,22 +98,22 @@ class TestStepCountData {
     		stepCountData.incrementEmptyStepCount();
     		// 【実行】		
     		// 【検証】
-    		assertEquals("stepCountData [totalStepCount=1, execStepCount=1, commentStepCount=1, emptyStepCount=1]", stepCountData.toString());
+    		assertEquals("stepCountData [totalStepCount=1, execStepCount=1, commentStepCount=1, emptyStepCount=1, canWriteStepCount=ture]", stepCountData.toString());
     		// 【後処理】
     	}
     }
     @Nested
     class OutputDataCommaDelimited {
-    	@DisplayName("1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列のテスト（初期値）")
+    	@DisplayName("ファイル名／1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列のテスト（初期値）")
     	@Test
     	void success1() {
     		// 【事前準備】
     		// 【実行】		
     		// 【検証】
-    		assertEquals("0,0,0,0", stepCountData.outputDataCommaDelimited());
+    		assertEquals("fileName,0,0,0,0", stepCountData.outputDataCommaDelimited("fileName"));
     		// 【後処理】
     	}
-    	@DisplayName("1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列のテスト（インクリメント実施後）")
+    	@DisplayName("ファイル名,1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列のテスト（インクリメント実施後）")
     	@Test
     	void success2() {
     		// 【事前準備】
@@ -123,7 +123,21 @@ class TestStepCountData {
     		stepCountData.incrementEmptyStepCount();
     		// 【実行】		
     		// 【検証】
-    		assertEquals("1,1,1,1", stepCountData.outputDataCommaDelimited());
+    		assertEquals("fileName,1,1,1,1", stepCountData.outputDataCommaDelimited("fileName"));
+    		// 【後処理】
+    	}
+    	@DisplayName("ファイル名,1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列のテスト（ステップ数ファイル書き込み不可）")
+    	@Test
+    	void success3() {
+    		// 【事前準備】
+    		stepCountData.incrementTotalStepCount();
+    		stepCountData.incrementExecStepCount();
+    		stepCountData.incrementCommentStepCount();
+    		stepCountData.incrementEmptyStepCount();
+    		stepCountData.setCanWriteStepCount(false);
+    		// 【実行】		
+    		// 【検証】
+    		assertEquals("fileName(Failure to tally the number of steps),0,0,0,0", stepCountData.outputDataCommaDelimited("fileName"));
     		// 【後処理】
     	}
     }

@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import constant.Constant;
 import data.StepCountData;
 import factory.StepCountFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch;
@@ -29,7 +30,7 @@ import util.log.Log4J2;
  */
 public abstract class AbsStepCount implements IfStepCount {
 	/** Log4J2インスタンス */
-	protected final Log4J2 logger;
+	protected final Log4J2 logger = Log4J2.getInstance();
 	/** カウント対象プログラムファイル */
 	protected final File inputFile;
 	/** カウント結果出力対象ファイル */
@@ -47,7 +48,6 @@ public abstract class AbsStepCount implements IfStepCount {
 		this.inputFile = inputFile;
 		this.outputFile = outputFile;
 		this.commentPatternMatch = commentPatternMatch;
-		this.logger = Log4J2.getInstance();
 	}
 	/**
 	 * <p>プログラムファイルのステップ数を集計するメソッド
@@ -100,12 +100,11 @@ public abstract class AbsStepCount implements IfStepCount {
 	 * @param stepCountData 1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラス
 	 */
 	protected void fileWriteStepCount(final StepCountData stepCountData) {
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(this.outputFile))) {
-			bw.write(this.inputFile.getName() + stepCountData.outputDataCommaDelimited());
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(this.outputFile, true))) {
+			bw.write(stepCountData.outputDataCommaDelimited(this.inputFile.getAbsolutePath()) + Constant.LINE_SEPARATOR);
 		} catch (IOException e) {
-			logger.logWarn("ステップ数書き込み処理で例外発生。 カウント対象プログラムファイル：" 
-					+ this.inputFile + ", カウント結果出力対象ファイル：" + this.outputFile);
-			logger.logError(e);
+			logger.logError("ステップ数書き込み処理で例外発生。 カウント対象プログラムファイル：" + this.inputFile.getAbsolutePath() 
+					+ ", カウント結果出力対象ファイル：" + this.outputFile.getAbsolutePath(), e);
 		}
 	}
 

@@ -45,5 +45,19 @@ class TestJavaStepCount {
         		// 【後処理】
         	}
         }
+        @DisplayName("集計対象ファイル：空ファイル")
+    	@Test
+    	void success2() throws Exception {
+    		// 【事前準備】
+    		// 【実行】
+        	StepCountData stepCountData = stepCountObj.fileReadStepCount(new StepCountData());
+        	System.out.println(stepCountData.toString());
+    		// 【検証】
+    		assertEquals(33, stepCountData.getTotalStepCount());
+    		assertEquals(9, stepCountData.getExecStepCount());
+    		assertEquals(20, stepCountData.getCommentStepCount());
+    		assertEquals(4, stepCountData.getEmptyStepCount());
+    		// 【後処理】
+    	}
     }
 }

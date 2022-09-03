@@ -1,3 +1,24 @@
-2022/08/30 08:14:31.251 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Main.javaステップカウント処理開始
-2022/08/30 08:14:31.261 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
-2022/08/30 08:14:31.263 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/03 16:33:45.664 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/03 16:33:45.668 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/03 16:37:47.171 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/03 16:37:47.187 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/03 16:37:47.192 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
+2022/09/03 16:37:47.198 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
+2022/09/03 16:37:47.204 [main] WARN   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/03 16:37:47.205 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.209 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.211 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.213 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.216 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.218 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.221 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.223 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始
+2022/09/03 16:37:47.230 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/03 16:37:47.236 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/03 16:37:47.239 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/03 16:37:47.243 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/03 16:37:47.247 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/03 16:37:47.249 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始
+2022/09/03 16:37:47.251 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/03 16:37:47.253 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了

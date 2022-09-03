@@ -16,6 +16,7 @@ import factory.StepCountFactory.StepCountType;
 import logic.commentPatternMatch.IfCommentPatternMatch;
 import logic.stepCount.IfStepCount;
 import main.arg.Arguments;
+import util.Util;
 import util.log.Log4J2;
 import util.validator.ValidatorUtil;
 
@@ -96,7 +97,9 @@ public class StepCountMain {
 			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
+		System.out.println("--> ステップカウント処理を開始します。");
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
+		System.out.println("--> ステップカウント処理を終了します。");
 	}
 	/**
 	 * <p>スクリプトモードのステップカウントメソッド
@@ -123,7 +126,9 @@ public class StepCountMain {
 			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
+		System.out.println("--> ステップカウント処理を開始します。");
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
+		System.out.println("--> ステップカウント処理を終了します。");
 	}
 	/**
 	 * <p>ステップカウント処理実行メソッド
@@ -136,18 +141,12 @@ public class StepCountMain {
 	private static void execStepCount(final File inputDirectory, final File outputFile) {
 		try {
 			logger.logInfo("ステップカウント処理開始");
-			System.out.println("--> ステップカウント処理を開始します。");
-			
 			writeHeaderStepCount(outputFile);
 			writeStepCountInDirectory(inputDirectory, outputFile);
-			
-			System.out.println("--> ステップカウント処理を終了します。");
 			logger.logInfo("ステップカウント処理正常終了");
 		} catch (Exception e) {
-			logger.logWarn("ステップカウント処理異常終了");
-			logger.logError(e);
-			
-			System.err.println("--> ステップカウント処理で異常が発生しました。処理を終了します。");
+			logger.logError("ステップカウント処理異常終了", e);
+			System.err.println("--> ステップカウント処理で異常が発生しました。");
 			return;
 		}	
 	}
@@ -163,7 +162,7 @@ public class StepCountMain {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
 			final StringJoiner sj = new StringJoiner(",");
 			Constant.STEP_COUNT_HEADER_NAME.stream().forEach(r -> sj.add(r));
-			bw.write(sj.toString());
+			bw.write(sj.toString() + Constant.LINE_SEPARATOR);
 		} catch (IOException e) {
 			logger.logError(e);
 		}
@@ -192,15 +191,15 @@ public class StepCountMain {
             if (inputFile.isDirectory()) {
             	writeStepCountInDirectory(inputFile, outputFile);
             } else if (inputFile.isFile()) {
-                final String fileName = inputFile.getName();
-                final String extension = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase().trim();   
+                final String extension = Util.getExtension(inputFile);
                 if (CommentPatternMatchType.containsExtension(extension) && StepCountType.containsExtension(extension)) {
 					IfCommentPatternMatch commentPatternMatchObj = CommentPatternMatchFactory.create(extension);
 					IfStepCount stepCountObj = StepCountFactory.create(extension, inputFile, outputFile, commentPatternMatchObj);
-					logger.logInfo("ファイル名：" + fileName + "ステップカウント処理開始");
+					
+					logger.logInfo("ファイル名：" + inputFile.getName() + "ステップカウント処理開始");
 					stepCountObj.stepCount();
                 } else {
-                	logger.logWarn("--> ファイルの拡張子が対応していません。ステップカウント処理をスキップします。 ファイル名：" + fileName);
+                	logger.logWarn("ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：" + inputFile.getName());
                 }
             }
         }

@@ -1,0 +1,6 @@
+2022/09/03 16:33:45.645 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/03 16:33:45.650 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/03 16:33:45.652 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/03 16:33:45.654 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/03 16:33:45.659 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/03 16:33:45.662 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始

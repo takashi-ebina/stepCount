@@ -79,6 +79,8 @@ public class ValidatorUtil {
 					break;
 				} else if ("n".equals(decide)) {
 					return false;
+				} else {
+					System.out.println("--> y または n 入力してください");
 				}
 			}
 		}

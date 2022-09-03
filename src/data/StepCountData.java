@@ -18,6 +18,8 @@ public class StepCountData {
 	private int commentStepCount = 0;
 	/** 1ファイル単位の空行数 */
 	private int emptyStepCount = 0;
+	/** ステップ数ファイル書き込みフラグ */
+	private boolean canWriteStepCount = true;
     /**
      * <p>1ファイル単位の総行数を返却するメソッド
      * 
@@ -75,6 +77,23 @@ public class StepCountData {
 		this.emptyStepCount++;
 	}
     /**
+     * <p>ステップ数ファイル書き込みフラグを返却するメソッド
+     * 
+     * @return ステップ数ファイル書き込みフラグ<br>
+     * 書き込み可能な場合はtrue。書き込み不可の場合はfalseを返却する。
+     */
+	public boolean isCanWriteStepCount() {
+		return this.canWriteStepCount;
+	}
+	/**
+	 * <p>ステップ数ファイル書き込みフラグを更新するメソッド
+	 * 
+	 * @param canWriteStepCount 書き込み可能な場合はtrue。書き込み不可の場合はfalseを設定する。
+	 */
+	public void setCanWriteStepCount(boolean canWriteStepCount) {
+		this.canWriteStepCount = canWriteStepCount;
+	}
+    /**
      * <p>{@link StepCountData}で定義されている文字列表現を返却するメソッド
      * 
      * @return {@link StepCountData}で定義されている文字列表現
@@ -85,18 +104,29 @@ public class StepCountData {
 				.append("stepCountData [totalStepCount=").append(this.totalStepCount)
 				.append(", execStepCount=").append(this.execStepCount)
 				.append(", commentStepCount=").append(this.commentStepCount)
-				.append(", emptyStepCount=").append(this.emptyStepCount).append("]").toString();	
+				.append(", emptyStepCount=").append(this.emptyStepCount)
+				.append(", canWriteStepCount=").append(this.canWriteStepCount).append("]").toString();	
 	}
     /**
-     * <p>1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りで返却するメソッド
-     * 
-     * @return 1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列
+     * <p>ファイル名／1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りで返却するメソッド
+     * <p>{@link StepCountData#canWriteStepCount}がfalseの場合は、ステップ数集計に失敗したとみなし、それぞれの値を0にして出力する。
+     * @param fileName ファイル名
+     * @return {@link StepCountData#canWriteStepCount}がtrueの場合、ファイル名／1ファイル単位の総行数／実行行数／コメント行数／空行数をカンマ区切りにした文字列を返却する。<br>
+     * falseの場合はファイル名+「(Failure to tally the number of steps),0,0,0,0」を結合した文字列を返却する。
      */
-	public String outputDataCommaDelimited() {
-		return new StringBuilder()
-				.append(this.totalStepCount).append(",")
-				.append(this.execStepCount).append(",")
-				.append(this.commentStepCount).append(",")
-				.append(this.emptyStepCount).toString();
+	public String outputDataCommaDelimited(final String fileName) {
+		final StringBuilder sb;
+		if (canWriteStepCount) {
+			sb = new StringBuilder()
+					.append(fileName).append(",")
+					.append(this.totalStepCount).append(",")
+					.append(this.execStepCount).append(",")
+					.append(this.commentStepCount).append(",")
+					.append(this.emptyStepCount);
+		} else {
+			sb = new StringBuilder()
+					.append(fileName).append("(Failure to tally the number of steps),0,0,0,0");
+		}
+		return sb.toString();
 	}
 }
