@@ -19,7 +19,7 @@ public class Util {
 	 * <p>ファイル拡張子取得メソッド
 	 * <p>Fileオブジェクトからファイルの拡張子を取得し返却する。
 	 * 
-	 * @paran file Fileオブジェクト
+	 * @param file Fileオブジェクト
 	 * @return ファイルの拡張子を文字列型で返却する。引数のFileオブジェクトがnullの場合はnullを返却する。
 	 */
 	public static String getExtension(File file) {
