@@ -5,7 +5,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * <p>ロギング処理を行うクラス
+ * <p>
+ * ロギング処理を行うクラス
+ * 
  * @since 1.0
  * @version 1.0
  * @author takashi.ebina
@@ -13,12 +15,15 @@ import org.apache.logging.log4j.Logger;
 public class Log4J2 {
 
 	/**
-	 * <p>唯一のLog4J2インスタンス
+	 * <p>
+	 * 唯一のLog4J2インスタンス
 	 */
-	private static Log4J2 thisinstance  = null;
-	
+	private static Log4J2 thisinstance = null;
+
 	/**
-	 * <p>インスタンス返却メソッド
+	 * <p>
+	 * インスタンス返却メソッド
+	 * 
 	 * @return Log4J2インスタンス
 	 */
 	public synchronized static Log4J2 getInstance() {
@@ -28,11 +33,14 @@ public class Log4J2 {
 		return Log4J2.thisinstance;
 	}
 
-	/** 
-	 * <p>コンストラクタ
-	 * <p>Singleton実装の為、外部からのインスタンス化は不可とする。
+	/**
+	 * <p>
+	 * コンストラクタ
+	 * <p>
+	 * Singleton実装の為、外部からのインスタンス化は不可とする。
 	 */
-	private Log4J2() {}
+	private Log4J2() {
+	}
 
 	private String getMessage(final String msg) {
 		// 自分のクラス名を取得(Log4J2)
@@ -42,19 +50,21 @@ public class Log4J2 {
 		int pos = 0;
 		for (StackTraceElement stackTraceElement : stackTraceElements) {
 			// クラス名比較
-			if(thisClassName.equals(stackTraceElement.getClassName())) {
-				break;	// stackTraceElementsから自分と同じクラス名だったら終了
+			if (thisClassName.equals(stackTraceElement.getClassName())) {
+				break; // stackTraceElementsから自分と同じクラス名だったら終了
 			}
 			pos++;
 		}
-		pos += 2;		// 出力したいクラス名/メソッド名は自分(MyLog4J)の2個次の位置にいる
+		pos += 2; // 出力したいクラス名/メソッド名は自分(MyLog4J)の2個次の位置にいる
 		final StackTraceElement m = stackTraceElements[pos];
 		// ログ出力対象のクラス名:[メソッド名] + log message
-		return m.getClassName() + ":" + m.getMethodName()+ "() " + msg;
+		return m.getClassName() + ":" + m.getMethodName() + "() " + msg;
 	}
 
 	/**
-	 * <p>Log4J2でデバッグレベルの情報をロギングする
+	 * <p>
+	 * Log4J2でデバッグレベルの情報をロギングする
+	 * 
 	 * @param msg デバッグメッセージ
 	 */
 	public void logDebug(final String msg) {
@@ -63,7 +73,9 @@ public class Log4J2 {
 	}
 
 	/**
-	 * <p>Log4J2でinfoレベルの情報をロギングする
+	 * <p>
+	 * Log4J2でinfoレベルの情報をロギングする
+	 * 
 	 * @param msg 出力メッセージ
 	 */
 	public void logInfo(final String msg) {
@@ -72,7 +84,9 @@ public class Log4J2 {
 	}
 
 	/**
-	 * <p>Log4J2でinfoレベルの情報をロギングする
+	 * <p>
+	 * Log4J2でinfoレベルの情報をロギングする
+	 * 
 	 * @param obj ログが出力される Class Object
 	 * @param msg 出力メッセージ
 	 */
@@ -82,7 +96,9 @@ public class Log4J2 {
 	}
 
 	/**
-	 * <p>Log4J2で警告レベルの情報をロギングする
+	 * <p>
+	 * Log4J2で警告レベルの情報をロギングする
+	 * 
 	 * @param msg 警告メッセージ
 	 */
 	public void logWarn(final String msg) {
@@ -91,20 +107,22 @@ public class Log4J2 {
 	}
 
 	/**
-	 * <p>Log4J2でエラーレベル情報ををロギングする
+	 * <p>
+	 * Log4J2でエラーレベル情報ををロギングする
+	 * 
 	 * @param logMsg ログメッセージ
-	 * @param e 例外情報
+	 * @param e      例外情報
 	 */
 	public void logError(String logMsg, final Exception e) {
 		final String msg = e.getMessage();
-		final Class<? extends Object> clss = e.getClass();		// Exceptionのクラス
-		final String clsname = e.getClass().getName();			// Exceptionのクラス名
+		final Class<? extends Object> clss = e.getClass(); 
+		final String clsname = e.getClass().getName();
 		final StackTraceElement[] st = e.getStackTrace();
 		logMsg += "¥n";
 		if (st != null && st.length > 0) {
-			logMsg += "Class:" + clsname+ "¥n";
+			logMsg += "Class:" + clsname + "¥n";
 			logMsg += "Detail:" + msg + "¥n";
-			for (int i=0; i<st.length ; i++) {
+			for (int i = 0; i < st.length; i++) {
 				String err = st[i].toString();
 				logMsg += err + "¥n";
 			}
@@ -112,12 +130,14 @@ public class Log4J2 {
 			logger.error("{}", logMsg);
 		}
 	}
+
 	/**
-	 * <p>Log4J2でエラーレベル情報ををロギングする
+	 * <p>
+	 * Log4J2でエラーレベル情報ををロギングする
+	 * 
 	 * @param e 例外情報
 	 */
 	public void logError(final Exception e) {
 		logError("", e);
 	}
 }
-		

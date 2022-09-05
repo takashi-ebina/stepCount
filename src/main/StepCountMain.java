@@ -4,11 +4,15 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.StringJoiner;
 
 import constant.Constant;
 import constant.Constant.CommandOptionType;
+import data.AllFilesStepCountData;
+import data.StepCountData;
 import factory.CommentPatternMatchFactory;
 import factory.CommentPatternMatchFactory.CommentPatternMatchType;
 import factory.StepCountFactory;
@@ -21,20 +25,25 @@ import util.log.Log4J2;
 import util.validator.ValidatorUtil;
 
 /**
- * <p>ステップカウント処理を行うメインクラス
- * <p>対話形式または引数にカウント対象のディレクトリパス、カウント結果出力対象のファイルパスを入力し、<br>
- * フォルダ内に存在するプログラムファイルのステップ数を集計し、CSV形式でファイルに出力します。 
- * <p> [使い方]<br>
+ * <p>
+ * ステップカウント処理を行うメインクラス
+ * <p>
+ * 対話形式または引数にカウント対象のディレクトリパス、カウント結果出力対象のファイルパスを入力し、<br>
+ * フォルダ内に存在するプログラムファイルのステップ数を集計し、CSV形式でファイルに出力します。
+ * <p>
+ * [使い方]<br>
  * java StepCountMain<br>
  * java StepCountMain [オプション] inputDirectoryPath outputFilePath<br>
  * [オプション]<br>
  * {@literal -h}:このメッセージを表示して終了する。<br>
  * {@literal -s}:スクリプトモードで実行する。（オプションを指定しない場合は対話モード）<br>
- * <p> [出力ファイルイメージ]<br>
+ * <p>
+ * [出力ファイルイメージ]<br>
  * ファイルパス,総行数,実行行数,コメント行数,空行数<br>
  * /Users/xxx.java,30,20,4,6<br>
  * ...
- * <p>[対応プログラムファイル]<br>
+ * <p>
+ * [対応プログラムファイル]<br>
  * <ul>
  * <li>Java</li>
  * </ul>
@@ -44,11 +53,13 @@ import util.validator.ValidatorUtil;
  * @author takashi.ebina
  */
 public class StepCountMain {
-	
+
 	/** Log4J2インスタンス */
 	private static final Log4J2 logger = Log4J2.getInstance();
+
 	/**
-	 * <p>ステップカウント処理を行うエントリーポイントメソッド
+	 * <p>
+	 * ステップカウント処理を行うエントリーポイントメソッド
 	 * 
 	 * @param args 未入力の場合、対話モードで処理を実行。それ以外の場合は引数に応じて処理が変動する。
 	 */
@@ -64,9 +75,12 @@ public class StepCountMain {
 			System.out.println("--> 存在しないオプションを指定しています。");
 		}
 	}
+
 	/**
-	 * <p>対話モードのステップカウントメソッド
-	 * <p>[処理概要]<br>
+	 * <p>
+	 * 対話モードのステップカウントメソッド
+	 * <p>
+	 * [処理概要]<br>
 	 * <ol>
 	 * <li>カウント対象のディレクトリパスの入力<br>
 	 * <li>カウント対象のディレクトリパスの入力チェック<br>
@@ -87,7 +101,7 @@ public class StepCountMain {
 			System.out.println("--> ステップカウント処理を終了します。");
 			return;
 		}
-		
+
 		System.out.println("--> ------------------------------------------------");
 		System.out.println("--> カウント結果出力対象のファイルパスを入力してください");
 		System.out.println("--> ファイル拡張子：CSV");
@@ -101,9 +115,12 @@ public class StepCountMain {
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
 		System.out.println("--> ステップカウント処理を終了します。");
 	}
+
 	/**
-	 * <p>スクリプトモードのステップカウントメソッド
-	 * <p>[処理概要]<br>
+	 * <p>
+	 * スクリプトモードのステップカウントメソッド
+	 * <p>
+	 * [処理概要]<br>
 	 * <ol>
 	 * <li>カウント対象のディレクトリパスの入力チェック<br>
 	 * <li>カウント結果出力対象のファイルパスの入力チェック<br>
@@ -114,10 +131,10 @@ public class StepCountMain {
 	 * @param args コマンドライン引数の値、オプションを簡易に解析するクラス。
 	 * @see Arguments
 	 */
-	private static void stepCountScriptMode(Arguments args) {
-    	final String inputDirectoryPath = args.getScriptArguments().getInputDirectoryPath();
-    	final String outputFilePath = args.getScriptArguments().getOutputFilePath();
- 
+	private static void stepCountScriptMode(final Arguments args) {
+		final String inputDirectoryPath = args.getScriptArguments().getInputDirectoryPath();
+		final String outputFilePath = args.getScriptArguments().getOutputFilePath();
+
 		if (!ValidatorUtil.inputDirectoryCheck(inputDirectoryPath)) {
 			System.out.println("--> ステップカウント処理を終了します。");
 			return;
@@ -130,30 +147,39 @@ public class StepCountMain {
 		execStepCount(new File(inputDirectoryPath), new File(outputFilePath));
 		System.out.println("--> ステップカウント処理を終了します。");
 	}
+
 	/**
-	 * <p>ステップカウント処理実行メソッド
-	 * <p>引数のカウント対象のディレクトリ、カウント結果出力対象のファイルを元にステップカウント処理を実行する。
-	 * <p>処理中に例外が発生した場合はエラーメッセージを出力し処理を終了する。
+	 * <p>
+	 * ステップカウント処理実行メソッド
+	 * <p>
+	 * 引数のカウント対象のディレクトリ、カウント結果出力対象のファイルを元にステップカウント処理を実行する。
+	 * <p>
+	 * 処理中に例外が発生した場合はエラーメッセージを出力し処理を終了する。
 	 * 
 	 * @param inputDirectory カウント対象のディレクトリ。
-	 * @param outputFile カウント結果出力対象のファイル。
+	 * @param outputFile     カウント結果出力対象のファイル。
 	 */
 	private static void execStepCount(final File inputDirectory, final File outputFile) {
 		try {
 			logger.logInfo("ステップカウント処理開始");
+			List<StepCountData> stepCountDatalist = execStepCountInDirectory(inputDirectory, new ArrayList<StepCountData>());
 			writeHeaderStepCount(outputFile);
-			writeStepCountInDirectory(inputDirectory, outputFile);
+			writeStepCountResult(new AllFilesStepCountData(stepCountDatalist), outputFile);
 			logger.logInfo("ステップカウント処理正常終了");
 		} catch (Exception e) {
 			logger.logError("ステップカウント処理異常終了", e);
 			System.err.println("--> ステップカウント処理で異常が発生しました。");
 			return;
-		}	
+		}
 	}
+
 	/**
-	 * <p>CSVヘッダー書き込みメソッド
-	 * <p>引数のカウント結果出力対象ファイルに対して、CSVのヘッダーの書き込み処理を行う。
-	 * <p>CSVヘッダーの定義は{@link Constant#STEP_COUNT_HEADER_NAME}参照。
+	 * <p>
+	 * CSVヘッダー書き込みメソッド
+	 * <p>
+	 * 引数のカウント結果出力対象ファイルに対して、CSVのヘッダーの書き込み処理を行う。
+	 * <p>
+	 * CSVヘッダーの定義は{@link Constant#STEP_COUNT_HEADER_NAME}参照。
 	 * 
 	 * @param outputFile カウント結果出力対象ファイル
 	 * @see Constant#STEP_COUNT_HEADER_NAME
@@ -167,13 +193,44 @@ public class StepCountMain {
 			logger.logError(e);
 		}
 	}
+
 	/**
-	 * <p>ディレクトリに対するステップ数カウントメソッド
-	 * <p>引数のカウント対象のディレクトリに対して再帰処理を行い、ステップカウント対象の拡張子をもつファイルに対して、<br>
-	 * 総行数,実行行数,コメント行数,空行数を集計し、引数のカウント結果出力対象ファイルに結果の書き込み処理を行う。
+	 * <p>
+	 * プログラムファイルのステップ数をステップカウント結果出力ファイルに書き込むメソッド
+	 * <p>
+	 * 引数の全ファイルの総行数／実行行数／コメント行数／空行数を集計するデータクラスを元に、<br>
+	 * 集計結果を引数のカウント結果出力対象ファイルに書き込む処理を行います。
+	 * <p>
+	 * [書き込み内容]<br>
+	 * ファイルパス,総行数,実行行数,コメント行数,空行数
 	 * 
-	 * @param inputDirectory カウント対象ディレクトリ
-	 * @param outputFile カウント結果出力対象ファイル
+	 * @param allFilesStepCountData 全ファイルの総行数／実行行数／コメント行数／空行数を集計するデータクラス
+	 * @param outputFile            カウント結果出力対象ファイル
+	 */
+	private static void writeStepCountResult(final AllFilesStepCountData allFilesStepCountData, final File outputFile) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile, true))) {
+			for (StepCountData stepCountData : allFilesStepCountData.getStepCountDatalist()) {
+				logger.logInfo("ステップカウント結果出力開始：" + stepCountData.getInputFile().getAbsolutePath());
+				// 各ファイル毎のステップ数出力
+				bw.write(stepCountData.outputDataCommaDelimited() + Constant.LINE_SEPARATOR);
+			}
+			// 全ファイル合計のステップ数出力
+			bw.write(allFilesStepCountData.outputDataCommaDelimited() + Constant.LINE_SEPARATOR);
+		} catch (IOException e) {
+			logger.logError("ステップカウント結果出力処理で例外発生。 カウント結果出力対象ファイル：" + outputFile.getAbsolutePath(), e);
+		}
+	}
+
+	/**
+	 * <p>
+	 * ディレクトリに対するステップ数カウントメソッド
+	 * <p>
+	 * 引数のカウント対象のディレクトリに対して再帰処理を行い、ステップカウント対象の拡張子をもつファイルに対して、<br>
+	 * 総行数,実行行数,コメント行数,空行数を集計したデータクラスを返却する。
+	 * 
+	 * @param inputDirectory    カウント対象ディレクトリ
+	 * @param stepCountDatalist 1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラスリスト
+	 * @return stepCountDatalist 1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラスリスト
 	 * @throws Exception {@link IfCommentPatternMatch}、および{@link IfStepCount}のインスタンス生成時に例外が発生した場合。
 	 * @see CommentPatternMatchType#containsExtension
 	 * @see StepCountType#containsExtension
@@ -182,31 +239,34 @@ public class StepCountMain {
 	 * @see IfCommentPatternMatch
 	 * @see IfStepCount#stepCount
 	 */
-	private static void writeStepCountInDirectory(final File inputDirectory, final File outputFile) throws Exception {
-        File[] files = inputDirectory.listFiles();
+	private static List<StepCountData> execStepCountInDirectory(final File inputDirectory, final List<StepCountData> stepCountDatalist) throws Exception {
+		File[] files = inputDirectory.listFiles();
 
-        if (files == null) return;
-        
-        for (File inputFile : files) {
-            if (inputFile.isDirectory()) {
-            	writeStepCountInDirectory(inputFile, outputFile);
-            } else if (inputFile.isFile()) {
-                final String extension = Util.getExtension(inputFile);
-                if (CommentPatternMatchType.containsExtension(extension) && StepCountType.containsExtension(extension)) {
+		for (File inputFile : files) {
+			if (inputFile.isDirectory()) {
+				execStepCountInDirectory(inputFile, stepCountDatalist);
+			} else if (inputFile.isFile()) {
+				final String extension = Util.getExtension(inputFile);
+				if (CommentPatternMatchType.containsExtension(extension) && StepCountType.containsExtension(extension)) {
 					IfCommentPatternMatch commentPatternMatchObj = CommentPatternMatchFactory.create(extension);
-					IfStepCount stepCountObj = StepCountFactory.create(extension, inputFile, outputFile, commentPatternMatchObj);
-					
+					IfStepCount stepCountObj = StepCountFactory.create(extension, commentPatternMatchObj);
+
 					logger.logInfo("ファイル名：" + inputFile.getName() + "ステップカウント処理開始");
-					stepCountObj.stepCount();
-                } else {
-                	logger.logWarn("ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：" + inputFile.getName());
-                }
-            }
-        }
-    }
+					final StepCountData stepCountData = stepCountObj.stepCount(inputFile);
+					stepCountDatalist.add(stepCountData);
+				} else {
+					logger.logWarn("ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：" + inputFile.getName());
+				}
+			}
+		}
+		return stepCountDatalist;
+	}
+
 	/**
-	 * <p>ヘルプメッセージ出力メソッド
-	 * <p>ヘルプメッセージをコンソールに出力する。
+	 * <p>
+	 * ヘルプメッセージ出力メソッド
+	 * <p>
+	 * ヘルプメッセージをコンソールに出力する。
 	 */
 	private static void printHelp() {
 		System.out.println("Usage: java StepCountMain");
@@ -214,5 +274,5 @@ public class StepCountMain {
 		System.out.println("OPTIONS");
 		System.out.println("       -h:このメッセージを表示して終了する。");
 		System.out.println("       -s:スクリプトモードで実行する。（オプションを指定しない場合は対話モード）");
-	} 
+	}
 }

@@ -5,31 +5,40 @@ import java.util.Scanner;
 
 import constant.Constant.CommandOptionType;
 import constant.Constant.FilePathType;
+
 /**
- * <p>入力チェック処理の共通クラス
+ * <p>
+ * 入力チェック処理の共通クラス
  * 
  * @since 1.0
  * @version 1.0
  * @author takashi.ebina
  */
 public class ValidatorUtil {
-	/** 
-	 * <p>コンストラクタ
-	 * <p>共通クラスのため、インスタンス化は不可とする。
+	/**
+	 * <p>
+	 * コンストラクタ
+	 * <p>
+	 * 共通クラスのため、インスタンス化は不可とする。
 	 */
-	private ValidatorUtil() {}
-	/** 
-	 * <p>入力ディレクトリパスチェック
-	 * <p>以下のチェックを実施する。
+	private ValidatorUtil() {
+	}
+
+	/**
+	 * <p>
+	 * 入力ディレクトリパスチェック
+	 * <p>
+	 * 以下のチェックを実施する。
 	 * <ol>
 	 * <li>空文字チェック<br>
 	 * <li>ディレクトリ判定チェック<br>
 	 * </ol>
+	 * 
 	 * @param inputPath 入力ディレクトリパス
 	 * @return 全ての入力チェックが正常の場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
 	public static boolean inputDirectoryCheck(final String inputPath) {
-		
+
 		if ("".equals(inputPath)) {
 			System.out.println("--> [ERROR]:入力フォルダが指定されていません。");
 			return false;
@@ -40,20 +49,24 @@ public class ValidatorUtil {
 		}
 		return true;
 	}
-	/** 
-	 * <p>出力ファイルチェック
-	 * <p>以下のチェックを実施する。
+
+	/**
+	 * <p>
+	 * 出力ファイルチェック
+	 * <p>
+	 * 以下のチェックを実施する。
 	 * <ol>
 	 * <li>空文字チェック<br>
 	 * <li>ファイル判定チェック<br>
 	 * <li>CSV形式チェック<br>
 	 * </ol>
+	 * 
 	 * @param outputPath 出力ファイルパス
-	 * @param mode コマンドオプション区分
+	 * @param mode       コマンドオプション区分
 	 * @return 全ての入力チェックが正常の場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
 	public static boolean outputFileCheck(final String outputPath, final CommandOptionType mode) {
-		
+
 		if ("".equals(outputPath)) {
 			System.out.println("--> 出力フォルダが指定されていません。");
 			return false;
@@ -86,14 +99,18 @@ public class ValidatorUtil {
 		}
 		return true;
 	}
-	/** 
-	 * <p>ファイルチェック
-	 * <p>引数のファイルパスがファイルまたはディレクトリであるかを判定する。<br>
+
+	/**
+	 * <p>
+	 * ファイルチェック
+	 * <p>
+	 * 引数のファイルパスがファイルまたはディレクトリであるかを判定する。<br>
 	 * 引数のファイルパスタイプ（{@link FilePathType}）によってチェック内容が変動する。
-	 * @param path チェック対象のファイルパス
+	 * 
+	 * @param path         チェック対象のファイルパス
 	 * @param filePathType ファイルパスタイプ<br>
-	 *        {@link FilePathType#DIRECTORY}の場合はディレクトリであるかのチェック処理、<br>
-	 *        {@link FilePathType#FILE}の場合はファイルであるかのチェック処理を行う。<br>
+	 *                     {@link FilePathType#DIRECTORY}の場合はディレクトリであるかのチェック処理、<br>
+	 *                     {@link FilePathType#FILE}の場合はファイルであるかのチェック処理を行う。<br>
 	 * @return 全ての入力チェックが正常の場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 * @see FilePathType
 	 */
@@ -101,29 +118,33 @@ public class ValidatorUtil {
 		boolean retFlg = false;
 		File file = new File(path);
 		switch (filePathType) {
-			case DIRECTORY:
-				retFlg = file.isDirectory();
-				break;
-			case FILE:
-				if (file.isDirectory()) {
-					retFlg = false;
-				} else {
-					retFlg = file.canRead();
-				}
-				break;
-			default:
+		case DIRECTORY:
+			retFlg = file.isDirectory();
+			break;
+		case FILE:
+			if (file.isDirectory()) {
+				retFlg = false;
+			} else {
+				retFlg = file.canRead();
+			}
+			break;
+		default:
 		}
 		return retFlg;
 	}
-	/** 
-	 * <p>CSVファイルチェック
-	 * <p>引数のファイルの拡張子がCSVであるか判定する。
+
+	/**
+	 * <p>
+	 * CSVファイルチェック
+	 * <p>
+	 * 引数のファイルの拡張子がCSVであるか判定する。
+	 * 
 	 * @param file チェック対象のファイル
 	 * @return ファイルの拡張子がCSVの場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
 	private static boolean isExtensionForCsv(final File file) {
-        final String fileName = file.getName();
-        final String extension = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase().trim(); 
+		final String fileName = file.getName();
+		final String extension = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase().trim();
 		return "csv".equals(extension);
 	}
 }
