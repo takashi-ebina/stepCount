@@ -1,6 +1,6 @@
 package logic.commentPatternMatch;
 
-import factory.CommentPatternMatchFactory;
+import logic.commentPatternMatch.CommentPatternMatchFactory.CommentPatternMatchType;
 
 /**
  * <p>
@@ -13,7 +13,7 @@ import factory.CommentPatternMatchFactory;
  * また、１行コメント／複数行コメント（開始）／複数行コメント（終了）を抽出する正規表現を<br>
  * {@link SingleCommentPattern}、{@link StartMultiCommentPattern}、{@link EndMultiCommentPattern}に定義してください。
  * <p>
- * インスタンスを生成する際は、{@link CommentPatternMatchFactory#create}を用いて生成してください。
+ * インスタンスを生成する際は、{@link CommentPatternMatchType#of}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0

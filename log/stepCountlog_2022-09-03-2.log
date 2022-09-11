@@ -1,6 +1,0 @@
-2022/09/03 16:33:45.620 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
-2022/09/03 16:33:45.625 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
-2022/09/03 16:33:45.628 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
-2022/09/03 16:33:45.630 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
-2022/09/03 16:33:45.633 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
-2022/09/03 16:33:45.642 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始

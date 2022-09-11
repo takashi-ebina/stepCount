@@ -1,7 +1,4 @@
-/**
- * 
- */
-package factory;
+package logic.stepCount;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,52 +8,55 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import logic.commentPatternMatch.CsCommentPatternMatch;
-import logic.commentPatternMatch.IfCommentPatternMatch;
 import logic.commentPatternMatch.JavaCommentPatternMatch;
 
-class TestCommentPatternMatchFactory {
+class TestStepCountFactory {
+	private JavaCommentPatternMatch jcpm;
+	private CsCommentPatternMatch ccpm;
     @BeforeEach
     void setUp() {
-    	
+    	jcpm = new JavaCommentPatternMatch();
+    	ccpm = new CsCommentPatternMatch();
     }
     @Nested
     class Create {
     	@Nested
         @DisplayName("正常系")
         class HappyCases {
-            @DisplayName("Javaコメント判定用オブジェクト生成成功")
+            @DisplayName("Javaステップカウントオブジェクト生成成功")
         	@Test
         	void success1() throws Exception {
         		// 【事前準備】
         		// 【実行】
-            	IfCommentPatternMatch commentPatternMatchObj = CommentPatternMatchFactory.create("java");
+            	IfStepCount stepCountObj = StepCountFactory.StepCountType.of("java", jcpm);
         		// 【検証】
-        		assertEquals(new JavaCommentPatternMatch(), commentPatternMatchObj);
+        		assertEquals(new JavaStepCount(jcpm), stepCountObj);
         		// 【後処理】
         	}
-            @DisplayName("Csコメント判定用オブジェクト生成成功")
+            @DisplayName("Csステップカウントオブジェクト生成成功")
         	@Test
         	void success2() throws Exception {
         		// 【事前準備】
         		// 【実行】
-            	IfCommentPatternMatch commentPatternMatchObj = CommentPatternMatchFactory.create("cs");
+            	IfStepCount stepCountObj = StepCountFactory.StepCountType.of("cs", ccpm);
         		// 【検証】
-        		assertEquals(new CsCommentPatternMatch(), commentPatternMatchObj);
+        		assertEquals(new CsStepCount(ccpm), stepCountObj);
         		// 【後処理】
         	}
         }
        	@Nested
         @DisplayName("異常系")
     	class UnhappyCases {
-            @DisplayName("Enum(CommentPatternMatchType)に定義されていない拡張子を引数に指定し、IllegalArgumentExceptionが発生")
+            @DisplayName("Enum(StepCountType)に定義されていない拡張子を引数に指定し、IllegalArgumentExceptionが発生")
         	@Test
         	void Exception1() throws Exception {
-        		// 【事前準備】
+        		// 【事前準備
         		// 【実行】
         		// 【検証】
-        		assertThrows(IllegalArgumentException.class,() -> CommentPatternMatchFactory.create("Java"));
+        		assertThrows(IllegalArgumentException.class,() -> StepCountFactory.StepCountType.of("sql", jcpm));
         		// 【後処理】
         	}
     	}
     }
+
 }

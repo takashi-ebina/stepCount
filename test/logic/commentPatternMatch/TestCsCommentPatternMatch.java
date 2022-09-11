@@ -7,7 +7,7 @@ class TestCsCommentPatternMatch {
 
 	@Test
 	void test() {
-		// CsCommentPatternMatch.javaはテスト対象外
+		// FIXME テストコード未実装
 	}
 
 }

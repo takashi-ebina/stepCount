@@ -3,9 +3,9 @@ package logic.stepCount;
 import java.io.File;
 
 import data.StepCountData;
-import factory.StepCountFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch;
 import logic.commentPatternMatch.IfCommentPatternMatch;
+import logic.stepCount.StepCountFactory.StepCountType;
 import util.log.Log4J2;
 
 /**
@@ -13,11 +13,12 @@ import util.log.Log4J2;
  * ステップカウントの抽象クラス
  * <p>
  * 各プログラムファイルのステップカウント処理を提供する抽象クラスです。<br>
- * 各プログラムファイル毎のステップカウント処理を実装する際は、このクラスを継承し、{@link AbsStepCount#fileReadStepCount(StepCountData)}をオーバーライドして、個別に実装してください。
+ * 各プログラムファイル毎のステップカウント処理を実装する際は、<br>
+ * このクラスを継承し、{@link AbsStepCount#fileReadStepCount(StepCountData)}をオーバーライドして、個別に実装してください。<br>
+ * また、１行コメント／複数行コメント（開始）／複数行コメント（終了）を判定するための正規表現の定義および実装を<br>
+ * {@link AbsCommentPatternMatch}を継承したクラスに記載してください。
  * <p>
- * また、１行コメント／複数行コメント（開始）／複数行コメント（終了）を判定するための正規表現の定義および実装を{@link AbsCommentPatternMatch}を継承したクラスに記載してください。
- * <p>
- * ステップカウントのインスタンスを生成する際は、{@link StepCountFactory#create(String, IfCommentPatternMatch)}を用いて生成してください。
+ * ステップカウントのインスタンスを生成する際は、{@link StepCountType#of(String, IfCommentPatternMatch)}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0
@@ -33,7 +34,16 @@ public abstract class AbsStepCount implements IfStepCount {
 	/** Log4J2インスタンス */
 	protected final Log4J2 logger = Log4J2.getInstance();
 	/** コメントパターン判定用クラス */
-	protected final IfCommentPatternMatch commentPatternMatch;
+	protected IfCommentPatternMatch commentPatternMatch = null;
+
+	/**
+	 * コンストラクタ
+	 * <p>
+	 * ファクトリクラス（{@link StepCountType#of}）で利用するために実装しています。<br>
+	 * 本クラスを継承する際は引数なしのコンストラクタを実装してください。
+	 */
+	protected AbsStepCount() {
+	}
 
 	/**
 	 * コンストラクタ
@@ -54,7 +64,7 @@ public abstract class AbsStepCount implements IfStepCount {
 	 * <p>
 	 * プログラムファイルのステップ数の集計処理を行い、1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラスを返却します。
 	 * 
-	 * @param inputFile           ステップカウント対象ファイル
+	 * @param inputFile ステップカウント対象ファイル
 	 * @return 1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラス
 	 */
 	@Override

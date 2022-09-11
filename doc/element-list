@@ -1,6 +1,5 @@
 constant
 data
-factory
 logic.commentPatternMatch
 logic.stepCount
 main

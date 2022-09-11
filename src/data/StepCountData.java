@@ -6,7 +6,8 @@ import java.io.File;
  * <p>
  * 1ファイル単位の総行数／実行行数／コメント行数／空行数を集計するデータクラス
  * <p>
- * 集計したステップ数が意図しない値とならないよう、ステップ数を加算する場合はincrementメソッドを利用し値が1ずつのみ加算されるようになっています。<br>
+ * 集計したステップ数が意図しない値になることを防止するため、<br>
+ * ステップ数を加算する場合はincrementメソッドを利用し値が1ずつのみ加算されるようになっています。<br>
  * そのため、setterメソッドは実装しておらず、新規実装も推奨していません。
  * 
  * @since 1.0
@@ -25,7 +26,7 @@ public class StepCountData {
 	/** ステップ数ファイル書き込みフラグ */
 	private boolean canWriteStepCount = true;
 	/** カウント対象プログラムファイル */
-	protected File inputFile;
+	protected final File inputFile;
 
 	/**
 	 * <p>
@@ -120,7 +121,7 @@ public class StepCountData {
 	 * @return ステップ数ファイル書き込みフラグ<br>
 	 *         書き込み可能な場合はtrue。書き込み不可の場合はfalseを返却する。
 	 */
-	public boolean isCanWriteStepCount() {
+	public boolean canWriteStepCount() {
 		return this.canWriteStepCount;
 	}
 

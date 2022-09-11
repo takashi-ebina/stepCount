@@ -1,13 +1,13 @@
 package logic.commentPatternMatch;
 
-import factory.CommentPatternMatchFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch.EndMultiCommentPattern;
 import logic.commentPatternMatch.AbsCommentPatternMatch.SingleCommentPattern;
 import logic.commentPatternMatch.AbsCommentPatternMatch.StartMultiCommentPattern;
+import logic.commentPatternMatch.CommentPatternMatchFactory.CommentPatternMatchType;
 
 /**
  * <p>
- * コメントパターン判定用のインタフェース
+ * コメントパターン判定のインタフェース
  * <p>
  * コメントを判定する処理を提供するインタフェースを提供するインタフェースであり、<br>
  * 実装する際は、このインタフェースをimplementsした{@link AbsCommentPatternMatch}を継承してください。
@@ -17,7 +17,7 @@ import logic.commentPatternMatch.AbsCommentPatternMatch.StartMultiCommentPattern
  * また、１行コメント／複数行コメント（開始）／複数行コメント（終了）を抽出する正規表現を<br>
  * {@link SingleCommentPattern}、{@link StartMultiCommentPattern}、{@link EndMultiCommentPattern}に定義してください。
  * <p>
- * インスタンスを生成する際は、{@link CommentPatternMatchFactory#create}を用いて生成してください。
+ * インスタンスを生成する際は、{@link CommentPatternMatchType#of}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0
@@ -61,4 +61,12 @@ public interface IfCommentPatternMatch {
 	 * @return 複数行コメント（終了）が存在する場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
 	public boolean isEndMultiCommentPattern(String target);
+	
+	/**
+	 * <p>
+	 * コメントパターン判定のオブジェクトを返却するメソッド
+	 * 
+	 * @return コメントパターン判定のオブジェクト
+	 */
+	public <T extends IfCommentPatternMatch> T create();
 }

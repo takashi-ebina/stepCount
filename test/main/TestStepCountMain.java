@@ -1,14 +1,13 @@
 package main;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
+@Disabled
 class TestStepCountMain {
 
 	@Test
 	void test() {
-		fail("まだ実装されていません");
+		// FIXME テストコード未実装
 	}
 
 }

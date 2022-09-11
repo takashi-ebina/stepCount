@@ -1,0 +1,480 @@
+2022/09/03 16:33:45.664 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/03 16:33:45.668 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/03 16:37:47.171 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/03 16:37:47.187 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/03 16:37:47.192 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
+2022/09/03 16:37:47.198 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
+2022/09/03 16:37:47.204 [main] WARN   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/03 16:37:47.205 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.209 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.211 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.213 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
+2022/09/03 16:37:47.216 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.218 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.221 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.223 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
+2022/09/03 16:37:47.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始
+2022/09/03 16:37:47.230 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/03 16:37:47.236 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/03 16:37:47.239 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/03 16:37:47.243 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/03 16:37:47.247 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/03 16:37:47.249 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始
+2022/09/03 16:37:47.251 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/03 16:37:47.253 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/04 18:38:36.943 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/04 18:38:36.960 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/04 18:38:36.965 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
+2022/09/04 18:38:36.971 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
+2022/09/04 18:38:36.975 [main] WARN   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/04 18:38:36.976 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
+2022/09/04 18:38:36.980 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
+2022/09/04 18:38:36.982 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始
+2022/09/04 18:38:36.984 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
+2022/09/04 18:38:36.986 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:38:36.988 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:38:36.993 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:38:36.995 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:38:36.997 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始
+2022/09/04 18:38:36.999 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/04 18:38:37.003 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/04 18:38:37.008 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/04 18:38:37.013 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/04 18:38:37.017 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/04 18:38:37.020 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始
+2022/09/04 18:38:37.025 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/04 18:38:37.035 [main] ERROR  java.lang.NullPointerException ステップカウント処理異常終了¥nClass:java.lang.NullPointerException¥nDetail:null¥nmain.StepCountMain.execStepCount(StepCountMain.java:150)¥nmain.StepCountMain.stepCountScriptMode(StepCountMain.java:133)¥nmain.StepCountMain.main(StepCountMain.java:65)¥n
+2022/09/04 18:40:42.994 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/04 18:41:07.431 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/04 18:42:55.551 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/04 18:42:55.565 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/04 18:42:55.571 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
+2022/09/04 18:42:55.576 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
+2022/09/04 18:42:55.580 [main] WARN   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/04 18:42:55.581 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
+2022/09/04 18:42:55.585 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
+2022/09/04 18:42:55.590 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始
+2022/09/04 18:42:55.592 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
+2022/09/04 18:42:55.595 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:42:55.597 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:42:55.600 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:42:55.602 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
+2022/09/04 18:42:55.603 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始
+2022/09/04 18:42:55.605 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/04 18:42:55.608 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/04 18:42:55.610 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/04 18:42:55.613 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/04 18:42:55.619 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/04 18:42:55.621 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始
+2022/09/04 18:42:55.623 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/04 18:42:55.626 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/06 01:42:23.954 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/06 01:42:23.977 [main] ERROR  java.lang.NoSuchMethodException ステップカウント処理異常終了¥nClass:java.lang.NoSuchMethodException¥nDetail:logic.stepCount.JavaStepCount.<init>(java.io.File, java.io.File, logic.commentPatternMatch.IfCommentPatternMatch)¥njava.base/java.lang.Class.getConstructor0(Class.java:3349)¥njava.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)¥nfactory.StepCountFactory.create(StepCountFactory.java:122)¥nmain.StepCountMain.execStepCountInDirectory(StepCountMain.java:252)¥nmain.StepCountMain.execStepCountInDirectory(StepCountMain.java:247)¥nmain.StepCountMain.execStepCount(StepCountMain.java:165)¥nmain.StepCountMain.stepCountScriptMode(StepCountMain.java:147)¥nmain.StepCountMain.main(StepCountMain.java:73)¥n
+2022/09/06 01:43:41.606 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/06 01:43:41.617 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：Util.javaステップカウント処理開始
+2022/09/06 01:43:41.623 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
+2022/09/06 01:43:41.628 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
+2022/09/06 01:43:41.634 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/06 01:43:41.634 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
+2022/09/06 01:43:41.639 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
+2022/09/06 01:43:41.641 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始
+2022/09/06 01:43:41.643 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：JavaStepCount.javaステップカウント処理開始
+2022/09/06 01:43:41.646 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：CsCommentPatternMatch.javaステップカウント処理開始
+2022/09/06 01:43:41.648 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：AbsCommentPatternMatch.javaステップカウント処理開始
+2022/09/06 01:43:41.650 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：JavaCommentPatternMatch.javaステップカウント処理開始
+2022/09/06 01:43:41.652 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：IfCommentPatternMatch.javaステップカウント処理開始
+2022/09/06 01:43:41.653 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：EnumReverseLookup.javaステップカウント処理開始
+2022/09/06 01:43:41.655 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：Constant.javaステップカウント処理開始
+2022/09/06 01:43:41.657 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：ScriptArguments.javaステップカウント処理開始
+2022/09/06 01:43:41.659 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：Arguments.javaステップカウント処理開始
+2022/09/06 01:43:41.661 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：StepCountMain.javaステップカウント処理開始
+2022/09/06 01:43:41.665 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：StepCountData.javaステップカウント処理開始
+2022/09/06 01:43:41.667 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：AllFilesStepCountData.javaステップカウント処理開始
+2022/09/06 01:43:41.668 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：CommentPatternMatchFactory.javaステップカウント処理開始
+2022/09/06 01:43:41.670 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイル名：StepCountFactory.javaステップカウント処理開始
+2022/09/06 01:43:41.673 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/06 01:43:41.673 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/06 01:43:41.673 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/06 01:43:41.673 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/06 01:43:41.674 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/06 01:43:41.674 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/06 01:43:41.674 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/06 01:43:41.674 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/06 01:43:41.675 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/06 01:43:41.675 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/06 01:43:41.675 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/06 01:43:41.675 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/06 01:43:41.676 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/06 01:43:41.676 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/06 01:43:41.676 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/06 01:43:41.677 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/06 01:43:41.677 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/06 01:43:41.677 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/06 01:43:41.678 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/factory/CommentPatternMatchFactory.java
+2022/09/06 01:43:41.678 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/factory/StepCountFactory.java
+2022/09/06 01:43:41.678 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 10:40:17.932 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 10:40:17.950 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 10:40:17.957 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 10:40:17.961 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 10:40:17.965 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 10:40:17.966 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 10:40:17.970 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 10:40:17.974 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 10:40:17.975 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 10:40:17.978 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 10:40:17.981 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 10:40:17.982 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 10:40:17.985 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 10:40:17.987 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 10:40:17.998 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 10:40:18.000 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 10:40:18.004 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 10:40:18.005 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 10:40:18.006 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 10:40:18.008 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 10:40:18.015 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 10:40:18.017 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 10:40:18.018 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 10:40:18.021 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 10:40:18.026 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 10:40:18.027 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 10:40:18.027 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 10:40:18.028 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 10:40:18.028 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 10:40:18.029 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 10:40:18.029 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 10:40:18.029 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 10:40:18.030 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 10:40:18.030 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 10:40:18.030 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 10:40:18.031 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 10:40:18.031 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 10:40:18.031 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 10:40:18.031 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 10:40:18.032 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 10:40:18.032 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 10:40:18.032 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 10:40:18.032 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 10:40:18.033 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 10:40:18.033 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 10:40:18.033 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 10:40:18.033 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 10:41:38.176 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 10:41:38.189 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 10:41:38.195 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 10:41:38.199 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 10:41:38.203 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 10:41:38.203 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 10:41:38.206 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 10:41:38.213 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 10:41:38.214 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 10:41:38.217 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 10:41:38.220 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 10:41:38.224 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 10:41:38.226 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 10:41:38.229 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 10:41:38.234 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 10:41:38.240 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 10:41:38.243 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 10:41:38.245 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 10:41:38.246 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 10:41:38.249 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 10:41:38.254 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 10:41:38.255 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 10:41:38.256 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 10:41:38.258 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 10:41:38.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 10:41:38.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 10:41:38.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 10:41:38.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 10:41:38.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 10:41:38.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 10:41:38.264 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 10:41:38.264 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 10:41:38.264 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 10:41:38.265 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 10:41:38.265 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 10:41:38.265 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 10:41:38.266 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 10:41:38.266 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 10:41:38.266 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 10:41:38.266 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 10:41:38.267 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 10:41:38.267 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 10:41:38.267 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 10:41:38.268 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 10:41:38.268 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 10:41:38.269 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 10:41:38.269 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:21:12.163 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:21:12.178 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:21:12.185 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:21:12.191 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:21:12.196 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:21:12.196 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:21:12.200 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:21:12.204 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:21:12.205 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:21:12.207 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:21:12.212 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:21:12.214 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:21:12.216 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:21:12.218 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:21:12.221 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:21:12.230 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:21:12.233 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:21:12.235 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:21:12.237 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:21:12.239 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:21:12.243 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:21:12.246 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:21:12.249 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:21:12.251 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:21:12.257 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:21:12.257 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:21:12.258 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:21:12.258 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:21:12.258 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:21:12.259 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:21:12.259 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:21:12.259 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:21:12.260 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:21:12.260 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:21:12.260 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:21:12.261 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 21:21:12.261 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 21:21:12.261 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 21:21:12.261 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 21:21:12.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 21:21:12.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 21:21:12.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 21:21:12.262 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 21:21:12.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 21:21:12.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 21:21:12.263 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 21:21:12.264 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:21:37.976 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:21:37.997 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:21:38.007 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:21:38.014 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:21:38.019 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:21:38.019 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:21:38.023 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:21:38.027 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:21:38.029 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:21:38.032 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:21:38.036 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:21:38.039 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:21:38.042 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:21:38.045 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:21:38.047 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:21:38.049 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:21:38.051 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:21:38.054 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:21:38.055 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:21:38.058 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:21:38.061 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:21:38.063 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:21:38.064 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:21:38.067 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:21:38.073 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 21:21:38.074 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 21:21:38.074 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:21:38.075 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:21:38.075 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 21:21:38.075 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 21:21:38.076 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:21:38.076 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:21:38.077 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:21:38.077 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 21:21:38.077 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 21:21:38.078 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:21:38.078 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:21:38.078 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:21:38.079 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:21:38.079 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 21:21:38.079 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:21:38.080 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 21:21:38.080 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 21:21:38.081 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 21:21:38.081 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:21:38.082 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 21:21:38.082 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:21:59.443 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:21:59.455 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:21:59.462 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:21:59.468 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:21:59.473 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:21:59.474 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:21:59.476 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:21:59.480 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:21:59.481 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:21:59.483 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:21:59.486 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:21:59.489 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:21:59.492 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:21:59.494 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:21:59.496 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:21:59.498 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:21:59.503 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:21:59.514 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:21:59.515 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:21:59.518 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:21:59.522 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:21:59.522 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:21:59.524 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:21:59.527 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:21:59.532 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:21:59.532 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 21:21:59.533 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 21:21:59.533 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:21:59.533 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:21:59.534 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 21:21:59.534 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 21:21:59.534 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:21:59.535 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 21:21:59.536 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:21:59.536 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:21:59.537 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:21:59.537 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 21:21:59.537 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:21:59.537 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:21:59.537 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 21:21:59.538 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 21:21:59.538 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 21:21:59.538 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:21:59.538 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 21:21:59.539 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:21:59.539 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 21:21:59.539 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:22:22.062 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:22:22.076 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:22:22.082 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:22:22.088 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:22:22.095 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:22:22.096 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:22:22.100 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:22:22.103 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:22:22.104 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:22:22.106 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:22:22.109 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:22:22.112 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:22:22.114 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:22:22.116 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:22:22.119 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:22:22.121 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:22:22.123 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:22:22.126 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:22:22.127 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:22:22.131 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:22:22.136 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:22:22.137 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:22:22.140 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:22:22.142 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:22:22.147 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 21:22:22.148 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 21:22:22.148 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:22:22.149 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 21:22:22.149 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:22:22.149 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 21:22:22.149 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:22:22.150 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:22:22.150 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:22:22.150 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 21:22:22.151 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 21:22:22.151 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:22:22.151 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 21:22:22.151 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 21:22:22.152 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:22:22.152 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:22:22.152 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 21:22:22.152 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:22:22.152 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:22:22.153 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:22:22.153 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 21:22:22.153 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 21:22:22.154 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:22:43.137 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:22:43.149 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:22:43.156 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:22:43.162 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:22:43.167 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:22:43.167 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:22:43.170 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:22:43.174 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:22:43.175 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:22:43.177 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:22:43.181 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:22:43.184 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:22:43.186 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:22:43.189 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:22:43.190 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:22:43.193 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:22:43.199 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:22:43.206 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:22:43.208 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:22:43.210 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:22:43.216 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:22:43.217 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:22:43.218 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:22:43.220 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:22:43.224 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparatorReverse.java
+2022/09/11 21:22:43.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/Comparator/StepCountDataComparator.java
+2022/09/11 21:22:43.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/Util.java
+2022/09/11 21:22:43.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:22:43.225 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:22:43.226 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:22:43.226 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/ScriptArguments.java
+2022/09/11 21:22:43.226 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:22:43.227 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:22:43.227 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java
+2022/09/11 21:22:43.228 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/validator/ValidatorUtil.java
+2022/09/11 21:22:43.228 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/StepCountFactory.java
+2022/09/11 21:22:43.228 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:22:43.229 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:22:43.229 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/JavaStepCount.java
+2022/09/11 21:22:43.229 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:22:43.230 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:22:43.230 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/util/log/Log4J2.java
+2022/09/11 21:22:43.230 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:22:43.231 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/StepCountMain.java
+2022/09/11 21:22:43.231 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:22:43.231 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/StepCountData.java
+2022/09/11 21:22:43.232 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理正常終了
+2022/09/11 21:23:07.105 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCount() ステップカウント処理開始
+2022/09/11 21:23:07.116 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Util.java
+2022/09/11 21:23:07.125 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ValidatorUtil.java
+2022/09/11 21:23:07.132 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Log4J2.java
+2022/09/11 21:23:07.138 [main] WARN   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ファイルの拡張子が未対応。ステップカウント処理をスキップ。 ファイル名：.DS_Store
+2022/09/11 21:23:07.139 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsStepCount.java
+2022/09/11 21:23:07.143 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsStepCount.java
+2022/09/11 21:23:07.147 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfStepCount.java
+2022/09/11 21:23:07.149 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountFactory.java
+2022/09/11 21:23:07.152 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaStepCount.java
+2022/09/11 21:23:07.157 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CsCommentPatternMatch.java
+2022/09/11 21:23:07.159 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：CommentPatternMatchFactory.java
+2022/09/11 21:23:07.170 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AbsCommentPatternMatch.java
+2022/09/11 21:23:07.177 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：JavaCommentPatternMatch.java
+2022/09/11 21:23:07.181 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：IfCommentPatternMatch.java
+2022/09/11 21:23:07.183 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：EnumReverseLookup.java
+2022/09/11 21:23:07.184 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Constant.java
+2022/09/11 21:23:07.186 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：ScriptArguments.java
+2022/09/11 21:23:07.187 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：Arguments.java
+2022/09/11 21:23:07.189 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountMain.java
+2022/09/11 21:23:07.193 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparator.java
+2022/09/11 21:23:07.194 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountDataComparatorReverse.java
+2022/09/11 21:23:07.195 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：StepCountData.java
+2022/09/11 21:23:07.198 [main] INFO   util.log.Log4J2 main.StepCountMain:execStepCountInDirectory() ステップカウント処理開始。 ファイル名：AllFilesStepCountData.java
+2022/09/11 21:23:07.203 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/AbsCommentPatternMatch.java
+2022/09/11 21:23:07.204 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/AbsStepCount.java
+2022/09/11 21:23:07.204 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/data/AllFilesStepCountData.java
+2022/09/11 21:23:07.205 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/main/arg/Arguments.java
+2022/09/11 21:23:07.205 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CommentPatternMatchFactory.java
+2022/09/11 21:23:07.205 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/Constant.java
+2022/09/11 21:23:07.206 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/CsCommentPatternMatch.java
+2022/09/11 21:23:07.206 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/CsStepCount.java
+2022/09/11 21:23:07.206 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/constant/EnumReverseLookup.java
+2022/09/11 21:23:07.207 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/IfCommentPatternMatch.java
+2022/09/11 21:23:07.207 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/stepCount/IfStepCount.java
+2022/09/11 21:23:07.207 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountResult() ステップカウント結果出力開始。 ファイルパス：/Applications/Eclipse_2021-06.app/Contents/workspace/stepCount_ver2/src/logic/commentPatternMatch/JavaCommentPatternMatch.java

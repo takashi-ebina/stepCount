@@ -1,6 +1,0 @@
-2022/09/03 16:33:45.598 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：ValidatorUtil.javaステップカウント処理開始
-2022/09/03 16:33:45.608 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：Log4J2.javaステップカウント処理開始
-2022/09/03 16:33:45.612 [main] WARN   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() --> ファイルの拡張子が対応していません。ステップカウント処理をスキップします。 ファイル名：.DS_Store
-2022/09/03 16:33:45.613 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：AbsStepCount.javaステップカウント処理開始
-2022/09/03 16:33:45.617 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：CsStepCount.javaステップカウント処理開始
-2022/09/03 16:33:45.619 [main] INFO   util.log.Log4J2 main.StepCountMain:writeStepCountInDirectory() ファイル名：IfStepCount.javaステップカウント処理開始

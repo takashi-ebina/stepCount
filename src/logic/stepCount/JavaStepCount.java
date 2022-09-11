@@ -8,9 +8,9 @@ import java.util.Objects;
 
 import constant.Constant;
 import data.StepCountData;
-import factory.StepCountFactory;
 import logic.commentPatternMatch.AbsCommentPatternMatch;
 import logic.commentPatternMatch.IfCommentPatternMatch;
+import logic.stepCount.StepCountFactory.StepCountType;
 
 /**
  * <p>
@@ -18,7 +18,7 @@ import logic.commentPatternMatch.IfCommentPatternMatch;
  * <p>
  * Javaファイルのステップカウント処理を提供する具象クラスです。
  * <p>
- * インスタンスを生成する際は、{@link StepCountFactory#create(String, IfCommentPatternMatch)}を用いて生成してください。
+ * インスタンスを生成する際は、{@link StepCountType#of(String, IfCommentPatternMatch)}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0
@@ -31,7 +31,20 @@ import logic.commentPatternMatch.IfCommentPatternMatch;
  * @see AbsCommentPatternMatch
  */
 public class JavaStepCount extends AbsStepCount {
-
+	
+	/**
+	 * <p>
+	 * コンストラクタ
+	 * 
+	 * ファクトリクラスとして利用するために、{@link StepCountType}で利用しています。<br>
+	 * 同一パッケージでこのコンストラクタを用いたインスタンスの生成は可能ですが、。<br>
+	 * {@link AbsStepCount#commentPatternMatch}が初期化されないため、推奨していません。<br>
+	 * インスタンスを生成する際は、{@link StepCountType#of(String, IfCommentPatternMatch)}を用いて生成してください。
+	 */
+	JavaStepCount() {
+		super();
+	}
+	
 	/**
 	 * <p>
 	 * コンストラクタ
@@ -64,11 +77,13 @@ public class JavaStepCount extends AbsStepCount {
 				// コメント行状態判定
 				if (isCommentLine) {
 					stepCountData.incrementCommentStepCount();
-					if (super.isEndMultiCommentPattern(trimReadLine)) isCommentLine = false;
+					if (super.isEndMultiCommentPattern(trimReadLine)) {
+						isCommentLine = false;
+					}
 					continue;
 				}
 				// 空行存在判定
-				if ("".equals(trimReadLine)) {
+				if (Objects.equals(trimReadLine, "")) {
 					stepCountData.incrementEmptyStepCount();
 					continue;
 				}
@@ -107,11 +122,17 @@ public class JavaStepCount extends AbsStepCount {
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) return true;
-		if (!(obj instanceof JavaStepCount)) return false;
-
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof JavaStepCount)) {
+			return false;
+		}
+		
 		JavaStepCount test = (JavaStepCount) obj;
-		if (!(Objects.equals(this.commentPatternMatch, test.commentPatternMatch))) return false;
+		if (!(Objects.equals(this.commentPatternMatch, test.commentPatternMatch))) {
+			return false;
+		}
 		return true;
 	}
 
@@ -124,5 +145,19 @@ public class JavaStepCount extends AbsStepCount {
 	@Override
 	public int hashCode() {
 		return Objects.hash();
+	}
+	
+	/**
+	 * <p>
+	 * Javaステップカウントのオブジェクトを返却するメソッド
+	 * 
+	 * @param commentPatternMatch コメントパターン判定用クラス
+	 * @throws IllegalArgumentException コメントパターン判定用クラスがNullの場合
+	 * @return Javaステップカウントのオブジェクト
+	 */
+	@Override
+	@SuppressWarnings("unchecked")
+	public <T extends IfStepCount> T create(final IfCommentPatternMatch commentPatternMatch) {
+		return (T) new JavaStepCount(commentPatternMatch);
 	}
 }

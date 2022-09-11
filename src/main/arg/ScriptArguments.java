@@ -9,7 +9,7 @@ package main.arg;
  * @version 1.0
  * @author takashi.ebina
  */
-public class ScriptArguments {
+public final class ScriptArguments {
 	/** カウント対象のディレクトリパス */
 	private String inputDirectoryPath;
 	/** カウント結果出力対象のファイルパス */
@@ -23,8 +23,12 @@ public class ScriptArguments {
 	 * 
 	 * @param inputDirectoryPath カウント対象のディレクトリパス
 	 * @param outputFilePath     カウント結果出力対象のファイルパス
+	 * @throws IllegalArgumentException コンストラクタの引数がNullの場合
 	 */
 	public ScriptArguments(final String inputDirectoryPath, final String outputFilePath) {
+		if (inputDirectoryPath == null || outputFilePath == null) {
+			throw new IllegalArgumentException("コンストラクタの引数の値がNullです");
+		}
 		this.inputDirectoryPath = inputDirectoryPath;
 		this.outputFilePath = outputFilePath;
 	}

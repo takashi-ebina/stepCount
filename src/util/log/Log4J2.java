@@ -1,8 +1,12 @@
 
 package util.log;
 
+import java.util.Objects;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import constant.Constant;
 
 /**
  * <p>
@@ -48,17 +52,17 @@ public class Log4J2 {
 		// StackTraceElementの配列を取得
 		final StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
 		int pos = 0;
-		for (StackTraceElement stackTraceElement : stackTraceElements) {
+		for (final StackTraceElement stackTraceElement : stackTraceElements) {
 			// クラス名比較
-			if (thisClassName.equals(stackTraceElement.getClassName())) {
+			if (Objects.equals(thisClassName, stackTraceElement.getClassName())) {
 				break; // stackTraceElementsから自分と同じクラス名だったら終了
 			}
 			pos++;
 		}
 		pos += 2; // 出力したいクラス名/メソッド名は自分(MyLog4J)の2個次の位置にいる
-		final StackTraceElement m = stackTraceElements[pos];
+		final StackTraceElement currentStackTrace = stackTraceElements[pos];
 		// ログ出力対象のクラス名:[メソッド名] + log message
-		return m.getClassName() + ":" + m.getMethodName() + "() " + msg;
+		return currentStackTrace.getClassName() + ":" + currentStackTrace.getMethodName() + "() " + msg;
 	}
 
 	/**
@@ -110,25 +114,23 @@ public class Log4J2 {
 	 * <p>
 	 * Log4J2でエラーレベル情報ををロギングする
 	 * 
-	 * @param logMsg ログメッセージ
-	 * @param e      例外情報
+	 * @param logMessage ログメッセージ
+	 * @param e          例外情報
 	 */
-	public void logError(String logMsg, final Exception e) {
-		final String msg = e.getMessage();
-		final Class<? extends Object> clss = e.getClass(); 
-		final String clsname = e.getClass().getName();
-		final StackTraceElement[] st = e.getStackTrace();
-		logMsg += "¥n";
-		if (st != null && st.length > 0) {
-			logMsg += "Class:" + clsname + "¥n";
-			logMsg += "Detail:" + msg + "¥n";
-			for (int i = 0; i < st.length; i++) {
-				String err = st[i].toString();
-				logMsg += err + "¥n";
+	public void logError(final String logMessage, final Exception e) {
+		final StackTraceElement[] stackTraceElements = e.getStackTrace();
+		String detailMessage = "";
+		String errorlMessage = "";
+		final Logger logger = LogManager.getLogger(e.getClass());
+		if (stackTraceElements != null && stackTraceElements.length > 0) {
+			detailMessage = Constant.LINE_SEPARATOR 
+					+ "Class:" + e.getClass().getName() + Constant.LINE_SEPARATOR
+					+ "Detail:" + e.getMessage() + Constant.LINE_SEPARATOR;
+			for (StackTraceElement stackTraceElement : stackTraceElements) {
+				errorlMessage += stackTraceElement.toString() + Constant.LINE_SEPARATOR;
 			}
-			Logger logger = LogManager.getLogger(clss);
-			logger.error("{}", logMsg);
 		}
+		logger.error("{}", logMessage + detailMessage + errorlMessage);
 	}
 
 	/**

@@ -7,7 +7,7 @@ class TestAbsStepCount {
 
 	@Test
 	void test() {
-		// TODO AbsStepCount.javaはテスト対象
+		// FIXME テストコード未実装
 	}
 
 }

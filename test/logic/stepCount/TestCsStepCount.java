@@ -7,7 +7,7 @@ class TestCsStepCount {
 
 	@Test
 	void test() {
-		// CsStepCount.javaはテスト対象外
+		// FIXME テストコード未実装
 	}
 
 }

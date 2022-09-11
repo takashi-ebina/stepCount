@@ -3,17 +3,18 @@ package logic.commentPatternMatch;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import factory.CommentPatternMatchFactory;
+import logic.commentPatternMatch.CommentPatternMatchFactory.CommentPatternMatchType;
 
 /**
  * <p>
- * Javaコメントパターン判定用抽象クラス
+ * Javaコメントパターン判定の具象クラス
  * <p>
  * Javaコメントを判定する処理を提供する具象クラスです。
  * <p>
- * {@link IfCommentPatternMatch}で定義されているメソッドをオーバライドして、１行コメント／複数行コメント（開始）／複数行コメント（終了）を判定する処理を実装しています。
+ * {@link IfCommentPatternMatch}で定義されているメソッドをオーバライドして、<br>
+ * １行コメント／複数行コメント（開始）／複数行コメント（終了）を判定する処理を実装しています。
  * <p>
- * インスタンスを生成する際は、{@link CommentPatternMatchFactory#create}を用いて生成してください。
+ * インスタンスを生成する際は、{@link CommentPatternMatchType#of(String)}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0
@@ -79,8 +80,12 @@ public class JavaCommentPatternMatch extends AbsCommentPatternMatch {
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) return true;
-		if (!(obj instanceof JavaCommentPatternMatch)) return false;
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof JavaCommentPatternMatch)) {
+			return false;
+		}
 		return true;
 	}
 
@@ -94,4 +99,16 @@ public class JavaCommentPatternMatch extends AbsCommentPatternMatch {
 	public int hashCode() {
 		return Objects.hash();
 	}
+	
+	/**
+	 * <p>
+	 * Javaコメントパターン判定のオブジェクトを返却するメソッド
+	 * 
+	 * @return Javaコメントパターン判定のオブジェクト
+	 */
+    @Override
+    @SuppressWarnings("unchecked")
+    public <T extends IfCommentPatternMatch> T create() {
+        return (T) new JavaCommentPatternMatch();
+    }
 }

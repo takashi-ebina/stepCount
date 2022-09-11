@@ -1,14 +1,15 @@
 package util.validator;
 
 import java.io.File;
+import java.util.Objects;
 import java.util.Scanner;
 
-import constant.Constant.CommandOptionType;
+import constant.Constant.ExecuteMode;
 import constant.Constant.FilePathType;
 
 /**
  * <p>
- * 入力チェック処理の共通クラス
+ * 入力チェック処理のユーティリティメソッドを提供するクラス
  * 
  * @since 1.0
  * @version 1.0
@@ -19,7 +20,7 @@ public class ValidatorUtil {
 	 * <p>
 	 * コンストラクタ
 	 * <p>
-	 * 共通クラスのため、インスタンス化は不可とする。
+	 * ユーティリティメソッドを提供するクラスのため、インスタンス化は不可とする。
 	 */
 	private ValidatorUtil() {
 	}
@@ -40,11 +41,11 @@ public class ValidatorUtil {
 	public static boolean inputDirectoryCheck(final String inputPath) {
 
 		if ("".equals(inputPath)) {
-			System.out.println("--> [ERROR]:入力フォルダが指定されていません。");
+			System.out.println("--> 入力フォルダが指定されていません。");
 			return false;
 		}
 		if (!fileCheck(inputPath, FilePathType.DIRECTORY)) {
-			System.out.println("--> [ERROR]:入力フォルダが指定に誤りがあります。");
+			System.out.println("--> 入力フォルダが指定に誤りがあります。");
 			return false;
 		}
 		return true;
@@ -65,7 +66,7 @@ public class ValidatorUtil {
 	 * @param mode       コマンドオプション区分
 	 * @return 全ての入力チェックが正常の場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
-	public static boolean outputFileCheck(final String outputPath, final CommandOptionType mode) {
+	public static boolean outputFileCheck(final String outputPath, final ExecuteMode mode) {
 
 		if ("".equals(outputPath)) {
 			System.out.println("--> 出力フォルダが指定されていません。");
@@ -76,10 +77,10 @@ public class ValidatorUtil {
 			return false;
 		}
 		if (!isExtensionForCsv(new File(outputPath))) {
-			System.out.println("--> 拡張子がCSV形式ではありません。");
+			System.out.println("--> 拡張子がCSVではありません。");
 			return false;
 		}
-		if (mode == CommandOptionType.INTERACTIVE && new File(outputPath).exists()) {
+		if (mode == ExecuteMode.INTERACTIVE && new File(outputPath).exists()) {
 			System.out.println("--> ------------------------------------------------");
 			System.out.println("--> 該当のファイルが既に存在します。 上書きされてしまいますがよろしいですか？ y / n");
 			System.out.println("--> ファイルパス：" + outputPath);
@@ -88,12 +89,12 @@ public class ValidatorUtil {
 			final Scanner sn = new Scanner(System.in);
 			while (true) {
 				final String decide = sn.next().toLowerCase().trim();
-				if ("y".equals(decide)) {
+				if (Objects.equals(decide, "y")) {
 					break;
-				} else if ("n".equals(decide)) {
+				} else if (Objects.equals(decide, "n")) {
 					return false;
 				} else {
-					System.out.println("--> y または n 入力してください");
+					System.out.println("--> y または n を入力してください");
 				}
 			}
 		}
@@ -145,6 +146,6 @@ public class ValidatorUtil {
 	private static boolean isExtensionForCsv(final File file) {
 		final String fileName = file.getName();
 		final String extension = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase().trim();
-		return "csv".equals(extension);
+		return Objects.equals(extension, "csv");
 	}
 }

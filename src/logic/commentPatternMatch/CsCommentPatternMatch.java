@@ -3,7 +3,7 @@ package logic.commentPatternMatch;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import factory.CommentPatternMatchFactory;
+import logic.commentPatternMatch.CommentPatternMatchFactory.CommentPatternMatchType;
 
 /**
  * <p>
@@ -11,9 +11,10 @@ import factory.CommentPatternMatchFactory;
  * <p>
  * Csコメントを判定する処理を提供する具象クラスです。
  * <p>
- * {@link IfCommentPatternMatch}で定義されているメソッドをオーバライドして、１行コメント／複数行コメント（開始）／複数行コメント（終了）を判定する処理を実装しています。
+ * {@link IfCommentPatternMatch}で定義されているメソッドをオーバライドして、<br>
+ * １行コメント／複数行コメント（開始）／複数行コメント（終了）を判定する処理を実装しています。
  * <p>
- * インスタンスを生成する際は、{@link CommentPatternMatchFactory#create}を用いて生成してください。
+ * インスタンスを生成する際は、{@link CommentPatternMatchType#of(String)}を用いて生成してください。
  * 
  * @since 1.0
  * @version 1.0
@@ -70,15 +71,44 @@ public class CsCommentPatternMatch extends AbsCommentPatternMatch {
 		return endMultiCCommentPattern.matcher(target).find();
 	}
 
+	/**
+	 * <p>
+	 * このオブジェクトが引数の他のオブジェクトが等しいかどうかを判定するメソッド
+	 *
+	 * @param obj 比較対象のオブジェクト
+	 * @return このオブジェクトが引数と同じである場合はtrue。それ以外の場合はfalseを返却する。
+	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) return true;
-		if (!(obj instanceof CsCommentPatternMatch)) return false;
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof CsCommentPatternMatch)) {
+			return false;
+		}
 		return true;
 	}
 
+	/**
+	 * <p>
+	 * オブジェクトのハッシュ・コード値を返却するメソッド
+	 * 
+	 * @return このオブジェクトのハッシュ・コード値。
+	 */
 	@Override
 	public int hashCode() {
 		return Objects.hash();
+	}
+
+	/**
+	 * <p>
+	 * Csコメントパターン判定のオブジェクトを返却するメソッド
+	 * 
+	 * @return Csコメントパターン判定のオブジェクト
+	 */
+	@Override
+	@SuppressWarnings("unchecked")
+	public <T extends IfCommentPatternMatch> T create() {
+		return (T) new CsCommentPatternMatch();
 	}
 }

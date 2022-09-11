@@ -5,7 +5,7 @@ import java.util.function.Function;
 
 /**
  * <p>
- * Enumのクラスとgetterから逆引き検索関数を生成するためのクラス。
+ * Enumのクラスとgetterから逆引き検索関数を生成するためのクラス
  * 
  * @since 1.0
  * @version 1.0
@@ -33,10 +33,10 @@ public class EnumReverseLookup<E extends Enum<E>, ATTR> {
 	 * <p>
 	 * 拡張子の存在判定メソッド
 	 * 
-	 * @param attribute 判定対象の拡張子
+	 * @param attribute Enum逆引きに用いる値
 	 * @return 対象のEnumが存在する場合はtrueを返却。それ以外の場合はfalseを返却する。
 	 */
-	public boolean containsExtension(ATTR attribute) {
+	public boolean containsAttribute(ATTR attribute) {
 		return Arrays.stream(enumClass.getEnumConstants()).anyMatch(e -> getter.apply(e).equals(attribute));
 	}
 
@@ -44,9 +44,9 @@ public class EnumReverseLookup<E extends Enum<E>, ATTR> {
 	 * <p>
 	 * Enum逆引きメソッド
 	 * <p>
-	 * 引数の拡張子に紐づくEnumを返却する。
+	 * 引数に紐づくEnumを返却する。
 	 * 
-	 * @param attribute 判定対象の拡張子
+	 * @param attribute Enum逆引きに用いる値
 	 * @return 対象のEnumを返却する。
 	 * @throws IllegalArgumentException 対象のEnumが存在しない場合にthrowする。
 	 */
