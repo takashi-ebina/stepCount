@@ -90,7 +90,7 @@ public final class AllFilesStepCountData {
 			} else if (stepCountSortTarget == SortTarget.EMPTYSTEPCOUNT) {
 				stepCountDataList.sort((o1, o2) -> o1.getEmptyStepCount() - o2.getEmptyStepCount());
 			}
-		} else if (stepCountSortType == SortType.ASCENDING_ORDER) {
+		} else if (stepCountSortType == SortType.DESCENDING_ORDER) {
 			if (stepCountSortTarget == SortTarget.FILEPATH) {
 				stepCountDataList.sort((o1, o2) -> o2.getInputFile().getName().compareTo(o1.getInputFile().getName()));
 			} else if (stepCountSortTarget == SortTarget.TOTALSTEPCOUNT) {
